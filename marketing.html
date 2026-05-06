@@ -3,24 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00919D">
   <title>Marketing Strategy | Eola Eyes</title>
   <meta name="description" content="Boutique-as-curated-experience positioning and 12-month channel mix for Eola Eyes in downtown Orlando.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <style>
+    <style>
     :root {
-      --color-indigo: #6366f1;
-      --color-rose: #f43f5e;
-      --color-teal: #14b8a6;
-      --color-slate-950: #020617;
+      --eola-paper: #FFFFFF;
+      --eola-paper-warm: #FAF8F3;
+      --eola-ink: #13151A;
+      --eola-teal: #00919D;
+      --eola-orange: #F7921E;
     }
-    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
-    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--eola-paper-warm);
+      color: var(--eola-ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; background: var(--eola-paper-warm); pointer-events: none; }
+    .hero { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 6rem 1rem 4rem; text-align: center; }
   </style>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
   <script defer src="./assets/js/main.js"></script>
@@ -34,14 +43,7 @@
 
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
-          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
-          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
-        </svg>
-        Eola Eyes
-      </a>
+      <a href="index.html" class="nav-logo"><img src="./assets/images/EolaEyes_logo.svg" alt="Eola Eyes" class="brand-mark" width="140" height="48"></a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -94,7 +96,7 @@
             </div>
             <div class="glass-card" style="background: rgba(245, 158, 11, 0.06); border: 1px solid rgba(245, 158, 11, 0.25); padding: 1.25rem;">
               <div class="text-sm text-muted mb-4" style="text-transform: uppercase; letter-spacing: 0.06em;">Headwind</div>
-              <div style="font-size: 1.75rem; font-weight: 700; color: #f59e0b;">AI Overviews</div>
+              <div style="font-size: 1.75rem; font-weight: 700; color: #F7921E;">AI Overviews</div>
               <p class="text-sm text-muted mt-4 mb-0">Google AI Overviews are eroding GBP click-through. Defend with reviews, posts, photos, and parallel IG content gravity.</p>
             </div>
           </div>
@@ -161,7 +163,7 @@
 
           <div class="glass-card">
             <div class="icon-container mb-4" style="background: rgba(245, 158, 11, 0.1);">
-              <svg viewBox="0 0 24 24" style="stroke: #f59e0b;">
+              <svg viewBox="0 0 24 24" style="stroke: #F7921E;">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
@@ -380,7 +382,7 @@
         <div class="glass-card mt-8" style="border-left: 4px solid var(--color-amber);">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
             <div class="icon-container" style="background: rgba(245, 158, 11, 0.1);">
-              <svg viewBox="0 0 24 24" style="stroke: #f59e0b;">
+              <svg viewBox="0 0 24 24" style="stroke: #F7921E;">
                 <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
                 <line x1="12" y1="9" x2="12" y2="13"/>
                 <line x1="12" y1="17" x2="12.01" y2="17"/>
@@ -866,7 +868,7 @@
           </div>
 
           <div class="glass-card">
-            <div style="font-size: 3rem; font-weight: 700; color: #f59e0b; margin-bottom: 0.5rem;">03</div>
+            <div style="font-size: 3rem; font-weight: 700; color: #F7921E; margin-bottom: 0.5rem;">03</div>
             <h4 class="mb-4">Launch quarterly trunk show as the marketing flywheel</h4>
             <p class="text-muted mb-4">Drives press, IG content, creator visits, in-store conversion, partner outreach, and Best of ORL voter mobilization &mdash; all from one anchor event.</p>
             <span class="badge badge-warning">First show: Q2 2026 (Blake Kuwahara spring drop)</span>
@@ -907,7 +909,7 @@
           <div class="glass-card" style="border-left: 4px solid var(--color-amber);">
             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
               <div class="icon-container" style="background: rgba(245, 158, 11, 0.1);">
-                <svg viewBox="0 0 24 24" style="stroke: #f59e0b;">
+                <svg viewBox="0 0 24 24" style="stroke: #F7921E;">
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M12 6v6l4 2"/>
                 </svg>

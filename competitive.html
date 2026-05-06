@@ -3,19 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00919D">
   <title>Competitive Intelligence | Eola Eyes</title>
   <meta name="description" content="The boutique optical fight in Orlando — and why Oxford Eyes (not Warby Parker) is the real competitor for Eola Eyes.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <style>
-    :root { --color-indigo: #6366f1; --color-rose: #f43f5e; --color-teal: #14b8a6; --color-slate-950: #020617; }
-    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
-    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+    <style>
+    :root {
+      --eola-paper: #FFFFFF;
+      --eola-paper-warm: #FAF8F3;
+      --eola-ink: #13151A;
+      --eola-teal: #00919D;
+      --eola-orange: #F7921E;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--eola-paper-warm);
+      color: var(--eola-ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; background: var(--eola-paper-warm); pointer-events: none; }
+    .hero { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 6rem 1rem 4rem; text-align: center; }
   </style>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
   <script defer src="./assets/js/main.js"></script>
@@ -29,14 +43,7 @@
 
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
-          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
-          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
-        </svg>
-        Eola Eyes
-      </a>
+      <a href="index.html" class="nav-logo"><img src="./assets/images/EolaEyes_logo.svg" alt="Eola Eyes" class="brand-mark" width="140" height="48"></a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -73,8 +80,8 @@
             <h4 class="mb-4">Curated indie inventory + tech lenses + 3-OD depth = Eola's edge</h4>
             <p class="text-muted text-sm mb-4">Edge is real but smaller than assumed. Oxford Eyes carries comparable independent depth (Lindberg, Tom Ford, FACE A FACE, Anne et Valentin). Neurolens is offered by 6+ Orlando providers. Blake Kuwahara remains a genuine differentiator.</p>
             <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem;">
-              <span class="text-muted">Prior: <strong style="color:#f1f5f9;">0.78</strong></span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="text-muted">Prior: <strong style="color:#13151A;">0.78</strong></span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C44E4E" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               <span class="text-warning">Updated: <strong>0.62</strong></span>
             </div>
             <div class="probability-bar"><div class="probability-fill" style="width: 62%;"></div></div>
@@ -88,8 +95,8 @@
             <h4 class="mb-4">Biggest threats = Warby Parker + insurance chains</h4>
             <p class="text-muted text-sm mb-4">Reframed. Warby has 3 Orlando stores and chains saturate, but the bigger near-term threat is Oxford Eyes (Ivanhoe Village, 7-year Best of ORL winner) and Edward Beiner (Mall at Millenia). Boutique threat overlaps directly; chain threat operates in a different price band.</p>
             <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem;">
-              <span class="text-muted">Prior: <strong style="color:#f1f5f9;">0.74</strong></span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="text-muted">Prior: <strong style="color:#13151A;">0.74</strong></span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C44E4E" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               <span class="text-warning">Updated: <strong>0.65</strong></span>
             </div>
             <div class="probability-bar"><div class="probability-fill" style="width: 65%;"></div></div>
@@ -103,8 +110,8 @@
             <h4 class="mb-4">Differentiation opportunity in bespoke styling experiences</h4>
             <p class="text-muted text-sm mb-4">Upgraded. Oxford already markets "Exclusive Private Styling" and Beiner offers private style consultations. Eola does NOT publicly market styling appointments or trunk shows. Building a signature, named styling program is the highest-leverage differentiation lane.</p>
             <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem;">
-              <span class="text-muted">Prior: <strong style="color:#f1f5f9;">0.62</strong></span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="text-muted">Prior: <strong style="color:#13151A;">0.62</strong></span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00919D" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               <span class="text-success">Updated: <strong>0.78</strong></span>
             </div>
             <div class="probability-bar"><div class="probability-fill" style="width: 78%;"></div></div>
@@ -144,7 +151,7 @@
                   <td><strong style="color: var(--color-indigo);">Tier 2</strong><br><span class="text-sm text-muted">Eola's Tier</span></td>
                   <td>Curated indie + selected luxury, OD-driven</td>
                   <td><strong>$400–$1,100</strong></td>
-                  <td><strong style="color: #f1f5f9;">Eola Eyes</strong>, Oxford Eyes, Eyedeology, Aloma Eye Associates, SEE Eyewear</td>
+                  <td><strong style="color: #13151A;">Eola Eyes</strong>, Oxford Eyes, Eyedeology, Aloma Eye Associates, SEE Eyewear</td>
                 </tr>
                 <tr>
                   <td><strong style="color: var(--color-indigo-light);">Tier 3</strong><br><span class="text-sm text-muted">OD + Designer Optical</span></td>
@@ -536,7 +543,7 @@
         <div class="swot-grid">
           <div class="glass-card swot-card swot-card--strengths">
             <h4>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00919D" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
               Strengths
@@ -553,7 +560,7 @@
 
           <div class="glass-card swot-card swot-card--weaknesses">
             <h4>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C44E4E" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="15" y1="9" x2="9" y2="15"/>
                 <line x1="9" y1="9" x2="15" y2="15"/>
@@ -572,7 +579,7 @@
 
           <div class="glass-card swot-card swot-card--opportunities">
             <h4>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00919D" stroke-width="2">
                 <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
                 <polyline points="17 6 23 6 23 12"/>
               </svg>
@@ -590,7 +597,7 @@
 
           <div class="glass-card swot-card swot-card--threats">
             <h4>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7921E" stroke-width="2">
                 <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
                 <line x1="12" y1="9" x2="12" y2="13"/>
                 <line x1="12" y1="17" x2="12.01" y2="17"/>

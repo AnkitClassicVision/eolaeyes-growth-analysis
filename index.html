@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00919D">
   <title>Eola Eyes Growth Analysis | Boutique Optical Sales Market Research</title>
   <meta name="description" content="Comprehensive market research and strategic growth roadmap for Eola Eyes, an independent boutique optical practice in downtown Orlando, FL.">
 
@@ -11,26 +12,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Critical CSS -->
-  <style>
+    <style>
     :root {
-      --color-indigo: #6366f1;
-      --color-rose: #f43f5e;
-      --color-teal: #14b8a6;
-      --color-slate-900: #0f172a;
-      --color-slate-950: #020617;
+      --eola-paper: #FFFFFF;
+      --eola-paper-warm: #FAF8F3;
+      --eola-ink: #13151A;
+      --eola-teal: #00919D;
+      --eola-orange: #F7921E;
     }
     body {
       margin: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--color-slate-950);
-      color: #f1f5f9;
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--eola-paper-warm);
+      color: var(--eola-ink);
+      -webkit-font-smoothing: antialiased;
     }
-    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
-    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; background: var(--eola-paper-warm); pointer-events: none; }
+    .hero { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 6rem 1rem 4rem; text-align: center; }
   </style>
 
   <!-- Fonts with display swap -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Deferred CSS -->
   <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -50,17 +52,7 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="10"/>
-          <circle cx="12" cy="12" r="4"/>
-          <line x1="12" y1="2" x2="12" y2="4"/>
-          <line x1="12" y1="20" x2="12" y2="22"/>
-          <line x1="2" y1="12" x2="4" y2="12"/>
-          <line x1="20" y1="12" x2="22" y2="12"/>
-        </svg>
-        Eola Eyes
-      </a>
+      <a href="index.html" class="nav-logo"><img src="./assets/images/EolaEyes_logo.svg" alt="Eola Eyes" class="brand-mark" width="140" height="48"></a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/>
