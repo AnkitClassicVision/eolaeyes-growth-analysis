@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "company": "Eola Eyes",
+    "short_name": "EolaEyes",
+    "service": "Boutique Optical Sales",
+    "build_date": "2026-05-06",
+    "design_system": "Ethereal Clarity",
+    "data_binding_rule": "Every claim on the website must trace to a research file. No invented metrics."
+  },
+  "pages": {
+    "index.html": {
+      "title": "Eola Eyes Growth Analysis | Boutique Optical Sales Market Research",
+      "active_nav": "Overview",
+      "sections": {
+        "hero": {"source_file": "01_inputs/business_snapshot.md", "section": "Company Information"},
+        "stat_cards": [
+          {"value": "$3.2M", "label": "Baseline annual revenue", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md", "section": "5. Eola Revenue Model + Growth Scenarios", "confidence": "MODELED — not measured at Eola PMS"},
+          {"value": "$3,640", "label": "Persona LTV (5-yr)", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md", "section": "3. LTV Modeling", "confidence": "MEDIUM"},
+          {"value": "11–182:1", "label": "LTV:CAC range", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md", "section": "2. CAC by Channel", "confidence": "MEDIUM"},
+          {"value": "23 yrs", "label": "Practice age", "source_file": "03_research/01_Company_Profile/company_profile.md", "section": "Practice Overview", "confidence": "HIGH"}
+        ],
+        "business_overview": {"source_file": "03_research/01_Company_Profile/company_profile.md", "sections": ["Practice Overview", "Brand Portfolio"]},
+        "market_overview": {"source_file": "03_research/02_Market_Analysis/market_analysis.md", "sections": ["1. Orlando Demographics", "2. ZIP-Level Income"]},
+        "hypotheses": {"source_file": "PROGRESS.md", "section": "Final Hypothesis Probabilities (post-Red-Team)"},
+        "strategic_headlines": {"source_file": "03_research/00_file_index.md", "section": "Cross-Cutting Strategic Headlines (post-Red-Team)"}
+      }
+    },
+    "executive-summary.html": {
+      "title": "Executive Summary | Eola Eyes Growth Analysis",
+      "active_nav": "Executive Summary",
+      "sections": {
+        "market_opportunity_score": {"value": "8.2/10", "components": "Demand 8.5 / Returns 8.2 / Position 7.0 / Risk 7.5"},
+        "strategic_findings": [
+          {"title": "Oxford Eyes is the real competitor", "source_file": "03_research/04_Competitive_Intelligence/competitive_analysis.md"},
+          {"title": "$400-680K zero-CAC lift on 18-36 month timeline", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md", "correction_note": "Phase 3 review MJ-3 corrected original 60-90 day claim"},
+          {"title": "Maya = priority persona with caveat", "source_file": "03_research/03_Personas/personas.md", "correction_note": "Phase 3 review MJ-5 added creative-class migration caveat"},
+          {"title": "Patient Brokering Act = critical legal prerequisite", "source_file": "03_research/08_Red_Team/assumptions_and_risks.md", "correction_note": "Phase 3 review MJ-4 elevated to top-of-page warning"}
+        ],
+        "hypothesis_summary": {"source_file": "PROGRESS.md", "all_9": true},
+        "implementation_roadmap": {"phases": ["Months 1-3 Foundation", "Months 4-12 Build", "Months 13-24 Scale"]}
+      }
+    },
+    "personas.html": {
+      "title": "Customer Personas | Eola Eyes Boutique Optical Sales",
+      "active_nav": "Personas",
+      "personas": [
+        {"name": "Maya Alvarez", "role": "Thornton Park Creative Director", "image_webp": "./assets/images/personas/maya_alvarez_headshot.webp", "image_jpg": "./assets/images/personas/maya_alvarez_headshot.jpg", "source_file": "03_research/03_Personas/personas.md", "section": "Persona 1", "priority": "PRIMARY", "caveat": "Phase 3 review: validate against Eola's actual customer ZIPs (creative-class migration risk)"},
+        {"name": "Jonathan Whitfield", "role": "Winter Park Established Professional", "image_webp": "./assets/images/personas/jonathan_whitfield_headshot.webp", "source_file": "03_research/03_Personas/personas.md", "section": "Persona 2"},
+        {"name": "Tess Nguyen", "role": "Mills 50 Cultural Curator", "image_webp": "./assets/images/personas/tess_nguyen_headshot.webp", "source_file": "03_research/03_Personas/personas.md", "section": "Persona 3"},
+        {"name": "Dr. Priya Shah", "role": "Lake Nona Medical Executive", "image_webp": "./assets/images/personas/priya_shah_headshot.webp", "source_file": "03_research/03_Personas/personas.md", "section": "Persona 4"},
+        {"name": "Caroline 'Cal' Beaumont", "role": "Frame Wardrobe Enthusiast", "image_webp": "./assets/images/personas/cal_beaumont_headshot.webp", "source_file": "03_research/03_Personas/personas.md", "section": "Persona 5", "priority": "HIGHEST_LTV"},
+        {"name": "Michael Reyes", "role": "Migraine → Optical Convert", "image_webp": "./assets/images/personas/michael_reyes_headshot.webp", "source_file": "03_research/03_Personas/personas.md", "section": "Persona 6"}
+      ]
+    },
+    "competitive.html": {
+      "title": "Competitive Intelligence | Eola Eyes",
+      "active_nav": "Competitive",
+      "sections": {
+        "tier_map": {"source_file": "03_research/04_Competitive_Intelligence/competitive_analysis.md", "section": "1. Competitive Landscape Map"},
+        "top_threats": [
+          {"name": "Oxford Eyes", "ranking": "PRIMARY", "distance": "1.7 mi", "address": "1213 N Orange Ave"},
+          {"name": "Edward Beiner", "ranking": "LUXURY ANCHOR", "location": "Mall at Millenia"},
+          {"name": "Warby Parker", "ranking": "RISING", "stores_orlando": 3, "new_tier": "Warby Sport $195+ April 2026"}
+        ],
+        "brand_matrix": {"source_file": "03_research/04_Competitive_Intelligence/competitive_analysis.md", "section": "5. Brand Portfolio Comparison Matrix"},
+        "scenarios": {"source_file": "03_research/08_Red_Team/competitive_response_scenarios.md"}
+      }
+    },
+    "funnels.html": {
+      "title": "Funnel Economics | Eola Eyes Boutique Optical Sales",
+      "active_nav": "Funnels",
+      "sections": {
+        "phase_3_correction": {"correction_note": "MJ-3: 18-36 month timeline (NOT 60-90 days)", "source_file": "05_review/research_review.md"},
+        "headline_stats": [
+          {"value": "$3,640", "label": "5-yr LTV", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md"},
+          {"value": "$6,370", "label": "10-yr LTV", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md"},
+          {"value": "$400-680K", "label": "Zero-CAC lift available", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md"},
+          {"value": "11–182:1", "label": "LTV:CAC range", "source_file": "03_research/05_Funnels_Economics/funnels_economics.md"}
+        ],
+        "internal_levers": [
+          {"name": "Doctor-to-optical handoff + tiered pricing", "lift": "$200-320K"},
+          {"name": "Multi-pair / sunglass attach", "lift": "$80-160K"},
+          {"name": "24-mo recall + insurance-expiry SMS", "lift": "$120-200K"}
+        ]
+      }
+    },
+    "marketing.html": {
+      "title": "Marketing Strategy | Eola Eyes",
+      "active_nav": "Marketing",
+      "sections": {
+        "phase_3_correction": {"correction_note": "H-G1 reframed: GBP/local SEO is funnel layer, IG is brand layer", "source_file": "05_review/research_review.md"},
+        "channel_mix": {"tiers": ["Lite $4K/mo", "Standard $7.5K/mo", "Aggressive $12K/mo"], "source_file": "03_research/06_Marketing_Strategy/marketing_strategy.md"},
+        "messaging_pillars": {"count": 5, "source_file": "03_research/06_Marketing_Strategy/marketing_strategy.md"}
+      }
+    },
+    "partnerships.html": {
+      "title": "Partnership Ecosystem | Eola Eyes",
+      "active_nav": "Partnerships",
+      "sections": {
+        "legal_warning": {"statute": "Florida Patient Brokering Act § 817.505", "budget": "$3,000-$8,000", "source_file": "03_research/08_Red_Team/assumptions_and_risks.md", "elevated_by": "Phase 3 review MJ-4"},
+        "phases": ["Phase 0: Legal Foundation (REQUIRED)", "Phase 1: Lifestyle/Retail/Hospitality", "Phase 2: Clinical (post-legal-opinion)"],
+        "top_5_prospects": [
+          "Dr. Rekha Gandhi @ Neurovations Clinic",
+          "Lorelei Wine Bar (Mills 50)",
+          "Park Smiles Dentistry cluster",
+          "Migraine & Headache Center of Florida",
+          "Grand Bohemian Orlando"
+        ],
+        "named_businesses_count": "80+",
+        "source_file": "03_research/07_Partnerships/partnerships.md"
+      }
+    }
+  },
+  "shared_assets": {
+    "logo_svg": "./assets/images/EolaEyes_logo.svg",
+    "css": "./assets/css/main.css",
+    "js": "./assets/js/main.js",
+    "persona_images_dir": "./assets/images/personas/",
+    "persona_images_format": "WebP primary + JPG fallback via <picture>"
+  },
+  "validation_status": "Phase 4 complete. Phase 5 (Codex/self-verification) pending.",
+  "phase_3_corrections_applied": [
+    "MJ-3: 18-36 month timeline replaces 60-90 day timeline (funnels page)",
+    "MJ-4: Patient Brokering Act elevated to top-of-page warning (partnerships page)",
+    "MJ-5: Maya creative-class migration caveat (personas + executive-summary pages)",
+    "Persona images render at 140px (CSS updated from 80px)",
+    "New status badges: status-qualified, status-reframed, status-downgraded, status-strongly-supported"
+  ]
+}

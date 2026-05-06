@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partnership Ecosystem | Eola Eyes</title>
+  <meta name="description" content="80+ named Orlando partnership prospects for Eola Eyes — sequenced safely under Florida law (Patient Brokering Act § 817.505).">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    :root {
+      --color-indigo: #6366f1;
+      --color-rose: #f43f5e;
+      --color-teal: #14b8a6;
+      --color-amber: #f59e0b;
+      --color-slate-950: #020617;
+    }
+    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+
+    /* Legal callout: must dominate the page */
+    .legal-callout {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(244, 63, 94, 0.10));
+      border: 2px solid var(--color-amber);
+      border-radius: 16px;
+      padding: 2.25rem 2rem;
+      margin: 2rem 0 3rem;
+      box-shadow: 0 0 60px rgba(245, 158, 11, 0.18), inset 0 0 0 1px rgba(245, 158, 11, 0.25);
+      position: relative;
+    }
+    .legal-callout::before {
+      content: "";
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      border-radius: 16px;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.4), transparent 60%);
+      z-index: -1;
+      filter: blur(18px);
+    }
+    .legal-callout__header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .legal-callout__icon {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: rgba(245, 158, 11, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    .legal-callout__icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--color-amber);
+      stroke-width: 2;
+      fill: none;
+    }
+    .legal-callout__title {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--color-amber);
+      letter-spacing: -0.01em;
+    }
+    .legal-callout__statute {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.18);
+      color: var(--color-amber);
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(245, 158, 11, 0.45);
+    }
+    .legal-callout__body {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: #f1f5f9;
+      margin-bottom: 0;
+    }
+    .legal-callout__body strong { color: var(--color-amber); }
+
+    .phase-marker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .phase-marker--zero {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--color-amber);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    .phase-marker--one {
+      background: rgba(20, 184, 166, 0.15);
+      color: #2dd4bf;
+      border: 1px solid rgba(20, 184, 166, 0.4);
+    }
+    .phase-marker--two {
+      background: rgba(99, 102, 241, 0.15);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+    }
+
+    .phase-zero-card {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.10), rgba(2, 6, 23, 0.6));
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 16px;
+      padding: 2rem;
+    }
+
+    .partner-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .partner-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+    .partner-list li:last-child { border-bottom: none; }
+    .partner-list .partner-name {
+      color: #f1f5f9;
+      font-weight: 600;
+    }
+    .partner-list .partner-meta {
+      display: block;
+      color: #94a3b8;
+      font-size: 0.8rem;
+      margin-top: 0.15rem;
+      line-height: 1.45;
+    }
+
+    .top5-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .top5-card .rank {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(99, 102, 241, 0.25);
+      line-height: 1;
+    }
+    .top5-card .est-revenue {
+      display: inline-block;
+      background: rgba(20, 184, 166, 0.12);
+      color: #2dd4bf;
+      padding: 0.35rem 0.7rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-top: 0.75rem;
+    }
+
+    .legal-not-allowed {
+      background: rgba(244, 63, 94, 0.08);
+      border-left: 3px solid var(--color-rose);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin-top: 1.25rem;
+    }
+    .legal-not-allowed strong { color: #fb7185; }
+
+    .template-block {
+      background: rgba(2, 6, 23, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      font-family: 'Inter', monospace;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+      white-space: pre-wrap;
+      margin-top: 1rem;
+    }
+    .template-block .subject {
+      color: var(--color-amber);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .kpi-tile {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+    }
+    .kpi-tile h5 {
+      margin: 0 0 0.4rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    .kpi-tile p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: #f1f5f9;
+      line-height: 1.45;
+    }
+
+    .projection-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 720px) {
+      .projection-row { grid-template-columns: 1fr; }
+      .legal-callout { padding: 1.5rem 1.25rem; }
+      .legal-callout__title { font-size: 1.4rem; }
+    }
+    .projection-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .projection-card .year-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .projection-card .lift-range {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin: 0.25rem 0 0.4rem;
+    }
+    .projection-card .revenue {
+      color: #2dd4bf;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .archetype-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .archetype-pill {
+      background: rgba(20, 184, 166, 0.06);
+      border: 1px solid rgba(20, 184, 166, 0.2);
+      border-radius: 8px;
+      padding: 0.7rem 0.95rem;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+    .archetype-pill strong { color: #2dd4bf; display: block; font-size: 0.92rem; margin-bottom: 0.15rem; }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob--indigo"></div>
+    <div class="aurora-blob aurora-blob--rose"></div>
+    <div class="aurora-blob aurora-blob--teal"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        </svg>
+        Eola Eyes
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="executive-summary.html" class="nav-link">Executive Summary</a></li>
+        <li><a href="personas.html" class="nav-link">Personas</a></li>
+        <li><a href="competitive.html" class="nav-link">Competitive</a></li>
+        <li><a href="funnels.html" class="nav-link">Funnels</a></li>
+        <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+        <li><a href="partnerships.html" class="nav-link active">Partnerships</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <header class="page-header" data-reveal>
+        <h1>Partnership Ecosystem</h1>
+        <p>80+ named Orlando partnership prospects — sequenced safely under Florida law.</p>
+      </header>
+
+      <!-- LEGAL CALLOUT — most prominent element on the page -->
+      <section class="section" data-reveal>
+        <div class="legal-callout">
+          <div class="legal-callout__header">
+            <div class="legal-callout__icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div>
+              <span class="legal-callout__statute">Florida Statute § 817.505 — Patient Brokering Act</span>
+              <h2 class="legal-callout__title">Felony-Level Criminal Exposure</h2>
+            </div>
+          </div>
+          <p class="legal-callout__body">
+            <strong>The Florida Patient Brokering Act § 817.505 carries felony-level criminal exposure</strong> for fee-split arrangements with healthcare providers, applicable to <strong>ALL payers including self-pay</strong>. There is no carve-out for cash-pay or boutique optical.
+          </p>
+          <p class="legal-callout__body" style="margin-top: 1rem;">
+            Before launching ANY structured partnership program with neurologists, dentists, dermatologists, primary care, or other clinical providers, Eola must engage a Florida healthcare attorney for a <strong>$3,000-$8,000 written legal opinion</strong> covering each partnership archetype. Lifestyle, retail, and hospitality partnerships carry materially lower legal risk but still require disclosure of any financial relationship.
+          </p>
+        </div>
+      </section>
+
+      <!-- Hypothesis Validation -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Hypothesis Validation: H-G2</h2>
+        <div class="glass-card hypothesis-card">
+          <div class="hypothesis-header">
+            <span class="hypothesis-id">H-G2</span>
+            <span class="hypothesis-status status-testing">Downgraded by Red Team</span>
+          </div>
+          <h4 class="mb-4">20-30% optical-revenue lift from cross-referral partnerships</h4>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="text-success mb-4">What survived</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  80+ named Orlando businesses verified within 3-mile catchment
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  Published optometry case shows 40% optical lift via partnerships
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  Lifestyle / retail / hospitality channel is fully open
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  15-30% achievable in Year 2-3 with disciplined legal foundation
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-warning mb-4">What got cut</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Original $500 legal-review estimate was wrong; real cost $3-8K
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Patient Brokering Act applies to self-pay; no carve-out exists
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Year-1 realistic = 5-12% lift, not 20-30%
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Healthcare partnerships gated until Phase 0 legal opinion is in hand
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-size: 0.875rem; color: var(--color-slate-400); margin-top: 1.5rem;">
+            <span>Prior: 0.55</span>
+            <span class="text-warning">Posterior: 0.40</span>
+          </div>
+          <div class="probability-bar">
+            <div class="probability-fill" style="width: 40%; background: linear-gradient(90deg, var(--color-amber), var(--color-rose));"></div>
+          </div>
+          <p class="text-sm text-muted mt-4 mb-0">
+            <strong>Revised expectation:</strong> Year-1 realistic lift = 5-12% (~$160K-$390K). Year 2-3 with mature program + legal compliance baked in = 15-30% lift (~$485K-$970K). The ceiling is intact; the runway is longer than the original 12-month projection.
+          </p>
+        </div>
+      </section>
+
+      <!-- PHASE 0 — LEGAL FOUNDATION -->
+      <section class="section" data-reveal>
+        <span class="phase-marker phase-marker--zero">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Phase 0 — REQUIRED before any structured outreach
+        </span>
+        <h2 class="section-title" style="margin-top: 0;">Legal Foundation</h2>
+        <div class="phase-zero-card">
+          <h4 class="mb-4" style="color: var(--color-amber);">Engage a Florida healthcare attorney specializing in optometry / Patient Brokering Act</h4>
+          <p class="text-muted mb-4">No partnership outreach to neurologists, pediatricians, dentists, dermatologists, primary care, or any other clinical provider begins until the written opinion is in hand. Lifestyle / retail / hospitality outreach can begin in parallel.</p>
+
+          <div class="grid-2 mt-4">
+            <div>
+              <h5 class="mb-4" style="color: #f1f5f9;">The written opinion must cover:</h5>
+              <ul class="feature-list">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Lifestyle / retail referral arrangements</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Hospitality concierge programs (Grand Bohemian, AC Hotel, etc.)</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Clinical / healthcare reciprocal-form referrals</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Gift-with-purchase programs</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Lunch-and-learn brand education at clinical practices</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Co-signed reciprocal patient education forms</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4" style="color: #f1f5f9;">Engagement parameters</h5>
+              <div class="kpi-grid" style="grid-template-columns: 1fr;">
+                <div class="kpi-tile">
+                  <h5>Budget</h5>
+                  <p><strong>$3,000-$8,000</strong> &mdash; the original analysis suggested $500. That figure was wrong. Patient Brokering Act counsel runs $400-$650/hr in Florida and the opinion needs 8-15 hours of review across archetypes.</p>
+                </div>
+                <div class="kpi-tile">
+                  <h5>Timeline</h5>
+                  <p><strong>4-6 weeks</strong> from engagement to delivery, including back-and-forth on each archetype.</p>
+                </div>
+                <div class="kpi-tile">
+                  <h5>Output</h5>
+                  <p>Documented compliance framework + template agreements per partnership archetype (lifestyle, hospitality, clinical-education, gift-with-purchase).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHASE 1 — LIFESTYLE / RETAIL / HOSPITALITY -->
+      <section class="section" data-reveal>
+        <span class="phase-marker phase-marker--one">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Phase 1 — Lifestyle, Retail &amp; Hospitality
+        </span>
+        <h2 class="section-title" style="margin-top: 0;">Lower legal risk &mdash; can launch in parallel with Phase 0</h2>
+        <div class="glass-card" style="border-left: 4px solid var(--color-teal); margin-bottom: 2rem;">
+          <p class="mb-0" style="color: #cbd5e1;">
+            These partnerships do not implicate the Patient Brokering Act because no healthcare referral fee or split is involved. Disclosure of any financial relationship is still required (FTC + Florida Deceptive and Unfair Trade Practices Act).
+          </p>
+        </div>
+      </section>
+
+      <!-- ADJACENT LUXURY / WELLNESS -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Adjacent Luxury &amp; Wellness Partners</h2>
+        <p class="text-muted mb-4" style="max-width: 800px;">Cash-pay aesthetic-conscious clientele = highest customer-overlap fidelity. Six categories, 40+ named Orlando businesses verified.</p>
+        <div class="grid-3">
+
+          <div class="glass-card">
+            <h4 class="mb-4">Medspas / Aesthetic Clinics</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Winter Park Skin Luxury Med Spa</span><span class="partner-meta">1600 Lee Rd &middot; influencer / public-figure clientele</span></li>
+              <li><span class="partner-name">SkinCeuticals SkinLab Winter Park</span><span class="partner-meta">Winter Park Village &middot; dermatologist-led</span></li>
+              <li><span class="partner-name">Aesthetic District Med Spa</span><span class="partner-meta">Winter Park + Lake Nona</span></li>
+              <li><span class="partner-name">Orlando Skin Solutions</span><span class="partner-meta">Park Ave &middot; Best Med Spa Winter Park '22 + '23</span></li>
+              <li><span class="partner-name">Artistik Beauty</span><span class="partner-meta">Winter Park &middot; top-rated boutique</span></li>
+              <li><span class="partner-name">Couture Med Spa</span><span class="partner-meta">Winter Park location</span></li>
+              <li><span class="partner-name">Revive Skincare Clinic</span><span class="partner-meta">Winter Park</span></li>
+              <li><span class="partner-name">Luxe MedSpa Aesthetics</span><span class="partner-meta">Orlando</span></li>
+              <li><span class="partner-name">The Aesthetics Lounge &amp; Spa</span><span class="partner-meta">Winter Park</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Cosmetic Dermatology</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Oasis Dermatology</span><span class="partner-meta">2304 Aloma Ave &middot; founder transferred from Soho NYC</span></li>
+              <li><span class="partner-name">Knight Dermatology</span><span class="partner-meta">Winter Park &middot; lasers + fillers</span></li>
+              <li><span class="partner-name">Mid Florida Dermatology &amp; Plastic Surgery</span><span class="partner-meta">Winter Park East / Benmore</span></li>
+              <li><span class="partner-name">Advanced Dermatology</span><span class="partner-meta">1801 Lee Rd, Winter Park</span></li>
+              <li><span class="partner-name">The Dermatology Group</span><span class="partner-meta">Winter Park + Orlando</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Plastic Surgery / Facial Aesthetic</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Park Avenue Plastic Surgery &amp; Spa</span><span class="partner-meta">Dr. Brian P. Joseph &middot; Park Ave foot traffic</span></li>
+              <li><span class="partner-name">Primera Plastic Surgery</span><span class="partner-meta">Winter Park &middot; Tuscan-style flagship</span></li>
+              <li><span class="partner-name">Dr. Saigal</span><span class="partner-meta">Orlando + Winter Park &middot; facial plastic</span></li>
+              <li><span class="partner-name">Clark Institute for Aesthetics</span><span class="partner-meta">Orlando &middot; refined natural outcomes</span></li>
+              <li><span class="partner-name">Goldfingers Aesthetics</span><span class="partner-meta">Winter Park</span></li>
+              <li><span class="partner-name">Dr. Scott Rotatori</span><span class="partner-meta">Winter Park &middot; near Park Ave</span></li>
+              <li><span class="partner-name">Vado Plastic Surgery</span><span class="partner-meta">Orlando &middot; boutique practice</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Pilates / Barre / Boutique Fitness</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Winter Park Pilates</span><span class="partner-meta">Classical Pilates &middot; 15+ years owner-operator</span></li>
+              <li><span class="partner-name">MatWorkz Pilates &amp; Gyrotonic</span><span class="partner-meta">Winter Park &middot; niche / premium</span></li>
+              <li><span class="partner-name">Pilates Mod Bod Studio</span><span class="partner-meta">Fairbanks Ave &middot; private instruction</span></li>
+              <li><span class="partner-name">JETSET Pilates Winter Park</span><span class="partner-meta">High-end reformer</span></li>
+              <li><span class="partner-name">barre3 Winter Park</span><span class="partner-meta">Boutique barre</span></li>
+              <li><span class="partner-name">Mills 50 Fitness</span><span class="partner-meta">Mills 50 &middot; hyper-local PT studio</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Acupuncture / Wellness</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Functional Wellness Acupuncture</span><span class="partner-meta">Orlando + Winter Park &middot; 20-yr established</span></li>
+              <li><span class="partner-name">Orlando Acupuncture</span><span class="partner-meta">Dr. Barnett &middot; chronic pain (Neurolens overlap)</span></li>
+              <li><span class="partner-name">Acupuncture of Orlando</span><span class="partner-meta">Dr. Zakia Chang &middot; doctorate-level</span></li>
+              <li><span class="partner-name">Rose Healthcare Centre</span><span class="partner-meta">Chiropractic + acupuncture</span></li>
+              <li><span class="partner-name">East Wind Therapies</span><span class="partner-meta">Winter Park</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Premium Salons / Barbershops</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Vamphair</span><span class="partner-meta">Thornton Park &middot; walking distance to Eola</span></li>
+              <li><span class="partner-name">Shaveshop</span><span class="partner-meta">828 Washington St &middot; men's grooming demo</span></li>
+              <li><span class="partner-name">Mosaic Hair Studio</span><span class="partner-meta">Thornton Park location</span></li>
+              <li><span class="partner-name">Classic Man Cuts</span><span class="partner-meta">College Park &middot; old-school refined</span></li>
+              <li><span class="partner-name">Clean &amp; Classy Barbershop</span><span class="partner-meta">Thornton Park &middot; veteran-owned</span></li>
+              <li><span class="partner-name">Liberty Barber Shop</span><span class="partner-meta">Thornton Park &middot; neighborhood</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- LIFESTYLE / RETAIL -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Lifestyle &amp; Retail Partners</h2>
+        <p class="text-muted mb-4" style="max-width: 800px;">Independent retailers whose customers already buy curated experience over volume. Lorelei Wine Bar = Q2 trunk-show priority.</p>
+
+        <div class="grid-3">
+
+          <div class="glass-card">
+            <h4 class="mb-4">Boutique Fashion</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Tuni Boutique</span><span class="partner-meta">Park Ave &middot; mother-daughter, personal styling</span></li>
+              <li><span class="partner-name">Monkee's of Winter Park</span><span class="partner-meta">Park Ave &middot; high-end footwear + accessories</span></li>
+              <li><span class="partner-name">Leonard 5th Avenue</span><span class="partner-meta">Park Ave &middot; men's + women's</span></li>
+              <li><span class="partner-name">JMcLaughlin</span><span class="partner-meta">Winter Park &middot; classic American sportswear</span></li>
+              <li><span class="partner-name">John Craig Clothier</span><span class="partner-meta">Winter Park &middot; upscale menswear</span></li>
+              <li><span class="partner-name">Sultre Boutique</span><span class="partner-meta">Winter Park &middot; independent</span></li>
+              <li><span class="partner-name">Charyli Stores</span><span class="partner-meta">Winter Park &middot; trendy women's boutique</span></li>
+              <li><span class="partner-name">The House on Lang</span><span class="partner-meta">Mills 50 / Ivanhoe &middot; walking distance</span></li>
+              <li><span class="partner-name">Freehand Goods</span><span class="partner-meta">East End Market &middot; artisanal apparel</span></li>
+              <li><span class="partner-name">The Owl's Attic</span><span class="partner-meta">East End Market &middot; vintage</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Independent Jewelry / Watches</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Orlando Watch Company</span><span class="partner-meta">329 N Park Ave &middot; Rolex / Patek / Cartier authorized</span></li>
+              <li><span class="partner-name">Simmons Jewelers</span><span class="partner-meta">306 S Park Ave &middot; original Park Ave watch repair</span></li>
+              <li><span class="partner-name">Majestic Jewelers</span><span class="partner-meta">Winter Park &middot; family-owned since 1986</span></li>
+            </ul>
+            <p class="text-sm text-muted mt-4" style="font-style: italic;">"Watch buyer = frame buyer." Highest aesthetic + investment-piece overlap.</p>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Specialty Coffee Roasters</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Lineage Coffee Roasting</span><span class="partner-meta">Mills 50 + East End + UCF &middot; walking distance</span></li>
+              <li><span class="partner-name">Foxtail Coffee Co.</span><span class="partner-meta">Multi-location &middot; born/brewed Winter Park 2016</span></li>
+              <li><span class="partner-name">Vespr Coffee Bar</span><span class="partner-meta">Waterford Lakes &middot; single-origin</span></li>
+              <li><span class="partner-name">Qreate Coffee</span><span class="partner-meta">Mills 50 &middot; photography studio + espresso</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card" style="border-left: 4px solid var(--color-teal);">
+            <h4 class="mb-4">Wine Bars + Natural Wine</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Lorelei Wine Bar</span><span class="partner-meta"><strong style="color: #2dd4bf;">PRIORITY &middot; Q2 trunk-show partner</strong> &middot; 737 N Thornton Ave, Mills 50 &middot; walking distance</span></li>
+              <li><span class="partner-name">Quicksand</span><span class="partner-meta">Mills 50 &middot; natural wine, Heather LaVine</span></li>
+              <li><span class="partner-name">Eola Wine Company</span><span class="partner-meta">Thornton Park &middot; Eola-as-name overlap is a marketing gift</span></li>
+              <li><span class="partner-name">Pharmacy</span><span class="partner-meta">Thornton Park &middot; craft cocktails</span></li>
+              <li><span class="partner-name">The Courtesy Bar</span><span class="partner-meta">Thornton Park &middot; "Best Old-Fashioned"</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Bookstores</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Writer's Block Bookstore</span><span class="partner-meta">Park Ave &middot; PW 2024 Bookstore-of-the-Year finalist</span></li>
+              <li><span class="partner-name">Authentic Books</span><span class="partner-meta">Ivanhoe Village &middot; walkable from Eola</span></li>
+              <li><span class="partner-name">The New Romantics</span><span class="partner-meta">Audubon Park &middot; romance + author signings</span></li>
+              <li><span class="partner-name">Park Ave CDs</span><span class="partner-meta">Audubon Park &middot; indie record shop institution</span></li>
+              <li><span class="partner-name">Porch Therapy</span><span class="partner-meta">East End Market &middot; plant boutique (IG-friendly)</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Art Galleries</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">CityArts</span><span class="partner-meta">Downtown Orlando &middot; rotating exhibits</span></li>
+              <li><span class="partner-name">Snap! Orlando</span><span class="partner-meta">Photography-focused</span></li>
+              <li><span class="partner-name">Faith Arts Village Orlando (FAVO)</span><span class="partner-meta">Artist collective &middot; first-Friday events</span></li>
+              <li><span class="partner-name">Mennello Museum of American Art</span><span class="partner-meta">900 E Princeton St, Loch Haven</span></li>
+              <li><span class="partner-name">Orlando Museum of Art</span><span class="partner-meta">Loch Haven &middot; corporate sponsorship tier</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HOSPITALITY -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Hospitality Concierge Partners</h2>
+        <p class="text-muted mb-4" style="max-width: 800px;">Downtown Orlando hosts ~70M+ visitor trips/year. A traveler with a frame emergency is a high-conversion walk-in IF the concierge knows where to send them. Branded bi-fold cards + 90-day in-person check-ins.</p>
+        <div class="grid-2">
+          <div class="glass-card" style="border-left: 4px solid var(--color-teal);">
+            <h4 class="mb-4">Priority hotel</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">Grand Bohemian Orlando, Autograph Collection</span><span class="partner-meta"><strong style="color: #2dd4bf;">2026 lead partnership</strong> &middot; downtown luxury, dedicated concierge, 11-min walk to Lake Eola</span></li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <h4 class="mb-4">Secondary hotels</h4>
+            <ul class="partner-list">
+              <li><span class="partner-name">AC Hotel by Marriott Orlando Downtown</span><span class="partner-meta">Marriott boutique brand &middot; downtown adjacency</span></li>
+              <li><span class="partner-name">Hyatt Regency Orlando</span><span class="partner-meta">Major convention hotel</span></li>
+              <li><span class="partner-name">Westin Orlando Downtown</span><span class="partner-meta">Business-traveler primary</span></li>
+              <li><span class="partner-name">Aloft Orlando Downtown</span><span class="partner-meta">Boutique chain &middot; walking distance</span></li>
+              <li><span class="partner-name">Lake Eola Heights Bed &amp; Breakfast</span><span class="partner-meta">Independent neighborhood B&amp;B &middot; best concierge fit</span></li>
+            </ul>
+            <p class="text-sm text-muted mt-4" style="font-style: italic;">Plus 30-50 high-end Lake Eola Heights / Thornton Park Airbnb hosts (welcome packets).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHASE 2 — CLINICAL/HEALTHCARE -->
+      <section class="section" data-reveal>
+        <span class="phase-marker phase-marker--two">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+          Phase 2 — POST Phase 0 Legal Opinion ONLY
+        </span>
+        <h2 class="section-title" style="margin-top: 0;">Clinical / Healthcare Referral Partners</h2>
+        <div class="glass-card" style="border-left: 4px solid var(--color-amber); margin-bottom: 2rem;">
+          <p class="mb-3" style="color: #f1f5f9; font-size: 1.05rem;">
+            <strong style="color: var(--color-amber);">Education-and-reciprocal-form model ONLY. NO fee splits, NO per-referral payments, NO gift cards as referral incentive.</strong>
+          </p>
+          <p class="mb-0" style="color: #cbd5e1;">
+            All clinical-partner outreach uses the lunch-and-learn + reciprocal-patient-education-form structure documented in the Phase 0 attorney opinion. Anti-Kickback Statute, Stark Law, and Florida Patient Brokering Act § 817.505 all apply.
+          </p>
+        </div>
+
+        <div class="grid-2">
+
+          <div class="glass-card">
+            <h4 class="mb-4">Neurologists / Headache Specialists</h4>
+            <p class="text-sm text-muted mb-4">Pipeline: Neurolens (prism alignment for migraine) + Avulux (photophobia filter).</p>
+            <ul class="partner-list">
+              <li><span class="partner-name">Migraine &amp; Headache Center of Florida</span><span class="partner-meta">Altamonte Springs &middot; Dr. Bernadette Nazario-Lopez &middot; Botox / nerve-block patients</span></li>
+              <li><span class="partner-name">Orlando Health Neuroscience &mdash; Headache &amp; Facial Pain Clinic</span><span class="partner-meta">Multidisciplinary &middot; Dr. Daniel Nohra Revilla</span></li>
+              <li><span class="partner-name">Dr. Brett Thomas, Migraine Treatment</span><span class="partner-meta">Orlando &middot; pain specialist</span></li>
+              <li><span class="partner-name">Dr. Rekha Gandhi, Neurovations Clinic</span><span class="partner-meta">Winter Park &middot; 19 yrs &middot; pediatric migraine</span></li>
+              <li><span class="partner-name">Florida Neurological Center &mdash; Headache Disorder Center</span><span class="partner-meta">Dedicated headache clinic</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Pediatricians / Pediatric Eye Care</h4>
+            <p class="text-sm text-muted mb-4">Pipeline: Stellest myopia management (FDA-authorized September 2025).</p>
+            <ul class="partner-list">
+              <li><span class="partner-name">Eye Physicians of Central Florida &mdash; Pediatric Ophthalmology</span><span class="partner-meta">Refers OUT for optometric myopia management</span></li>
+              <li><span class="partner-name">EYE Invision &mdash; Dr. Anh Do</span><span class="partner-meta">Pediatric eye care + Ortho-K &middot; info-swap, not competition</span></li>
+              <li><span class="partner-name">You &amp; Eyes &mdash; Dr. Lena Phu</span><span class="partner-meta">Neuro-developmental pediatric optometry</span></li>
+              <li><span class="partner-name">Club Pediatrics</span><span class="partner-meta">Orlando &middot; concierge boutique pediatrics</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Cosmetic Dentists</h4>
+            <p class="text-sm text-muted mb-4">Premium cash-pay cosmetic dental customer = same demographic as Eola. Lifestyle-path partnership (NOT fee-split).</p>
+            <ul class="partner-list">
+              <li><span class="partner-name">Park Smiles Dentistry</span><span class="partner-meta">Winter Park &middot; "Best Dentist Winter Park" 10 yrs &middot; ~100-yr practice</span></li>
+              <li><span class="partner-name">Artistic Smile of Orlando</span><span class="partner-meta">Winter Park &middot; Invisalign + veneers</span></li>
+              <li><span class="partner-name">The Smile Home Dental Clinic</span><span class="partner-meta">Orlando + Winter Park &middot; veneers / implants</span></li>
+              <li><span class="partner-name">Hillcrest Dental</span><span class="partner-meta">Winter Park &middot; Invisalign-focused</span></li>
+              <li><span class="partner-name">Dynamic Smile Design</span><span class="partner-meta">Orlando + Lake Nona + Winter Park</span></li>
+              <li><span class="partner-name">Smile Center of Orlando</span><span class="partner-meta">Winter Park &middot; cosmetic dentistry</span></li>
+              <li><span class="partner-name">Winter Park Dental</span><span class="partner-meta">Veneers focus</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Cosmetic Dermatologists</h4>
+            <p class="text-sm text-muted mb-4">Frame styling for post-procedure clients. See Adjacent Luxury / Wellness section for the full named list.</p>
+            <ul class="partner-list">
+              <li><span class="partner-name">Oasis Dermatology</span><span class="partner-meta">2304 Aloma Ave &middot; SoHo NYC sensibility</span></li>
+              <li><span class="partner-name">Knight Dermatology</span><span class="partner-meta">Winter Park &middot; cosmetic + medical</span></li>
+              <li><span class="partner-name">Mid Florida Dermatology &amp; Plastic Surgery</span><span class="partner-meta">Winter Park East / Benmore</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card" style="grid-column: span 2;">
+            <h4 class="mb-4">Concierge Primary Care / Direct Primary Care</h4>
+            <p class="text-sm text-muted mb-4">Highest cash-pay alignment. Patient demo overlaps directly with Eola's frame customer.</p>
+            <div class="grid-3">
+              <ul class="partner-list">
+                <li><span class="partner-name">Orlando Concierge Medicine</span><span class="partner-meta">Downtown &middot; same neighborhood as Eola</span></li>
+                <li><span class="partner-name">Advanced Wellness MD</span><span class="partner-meta">Concierge &middot; unlimited in-person + virtual</span></li>
+              </ul>
+              <ul class="partner-list">
+                <li><span class="partner-name">Michael J. D'Ambrose, MD</span><span class="partner-meta">Orlando &middot; 24/7 access, same-day visits</span></li>
+                <li><span class="partner-name">APMUC</span><span class="partner-meta">1400 E Robinson &middot; multi-modality</span></li>
+              </ul>
+              <ul class="partner-list">
+                <li><span class="partner-name">Prerna Health</span><span class="partner-meta">Lifestyle-medicine concierge</span></li>
+                <li><span class="partner-name">House Concierge MD</span><span class="partner-meta">Greater Orlando &middot; mobile</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TOP 5 PROSPECTS -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Top 5 Partnership Prospects</h2>
+        <p class="text-muted mb-4" style="max-width: 800px;">Sequenced for 2026 launch. Estimated Year-1 revenue impact assumes Phase 0 legal foundation in hand for clinical partners.</p>
+        <div class="grid-2">
+
+          <div class="glass-card top5-card">
+            <span class="rank">01</span>
+            <span class="badge badge-info mb-4">Healthcare &middot; POST Phase 0</span>
+            <h4 class="mb-4">Dr. Rekha Gandhi &mdash; Neurovations Clinic</h4>
+            <p class="text-sm text-muted mb-2"><strong>Winter Park</strong> &middot; 19 years experience &middot; migraine + pediatric migraine specialty</p>
+            <p class="text-sm" style="color: #cbd5e1;">Geographically perfect (Winter Park = walking-distance demo). Direct Neurolens/Avulux pipeline. <em>Approach:</em> Dr. Williams personal outreach, lunch-and-learn first.</p>
+            <span class="est-revenue">Est. $25-40K Y1</span>
+          </div>
+
+          <div class="glass-card top5-card" style="border-left: 4px solid var(--color-teal);">
+            <span class="rank">02</span>
+            <span class="badge badge-success mb-4">Lifestyle &middot; Phase 1 ready now</span>
+            <h4 class="mb-4">Lorelei Wine Bar</h4>
+            <p class="text-sm text-muted mb-2"><strong>737 N Thornton Ave, Mills 50</strong> &middot; walking distance &middot; Death-in-the-Afternoon team</p>
+            <p class="text-sm" style="color: #cbd5e1;">Q2 2026 trunk-show partner ("Sip + See" &mdash; Blake Kuwahara curation, natural wine pour, Eola team styling). <em>Approach:</em> OD-led drop-by.</p>
+            <span class="est-revenue">Est. $20-50K Y1</span>
+          </div>
+
+          <div class="glass-card top5-card">
+            <span class="rank">03</span>
+            <span class="badge badge-success mb-4">Lifestyle path &middot; NOT fee-split</span>
+            <h4 class="mb-4">Park Smiles Dentistry + Cosmetic Dental Cluster</h4>
+            <p class="text-sm text-muted mb-2"><strong>Winter Park</strong> &middot; "Best Dentist Winter Park" 10 yrs &middot; nearly 100-yr practice history</p>
+            <p class="text-sm" style="color: #cbd5e1;">Premium cash-pay overlap. Cross-card swap, holiday gift baskets, OD-led "frame styling for veneer / Invisalign reveal" content. <em>Approach:</em> Reciprocal card swap (NOT compensation).</p>
+            <span class="est-revenue">Est. $30-60K Y1</span>
+          </div>
+
+          <div class="glass-card top5-card">
+            <span class="rank">04</span>
+            <span class="badge badge-info mb-4">Healthcare &middot; POST Phase 0</span>
+            <h4 class="mb-4">Migraine &amp; Headache Center of Florida</h4>
+            <p class="text-sm text-muted mb-2"><strong>Altamonte Springs / Greater Orlando</strong> &middot; Dr. Nazario-Lopez &middot; nerve-block + Botox patients</p>
+            <p class="text-sm" style="color: #cbd5e1;">Largest dedicated headache clinic in the area. Multi-modality patient = multi-touchpoint relationship. Direct Neurolens candidates. <em>Approach:</em> OD-to-MD direct outreach, lunch-and-learn, co-signed referral form.</p>
+            <span class="est-revenue">Est. $30-60K Y1</span>
+          </div>
+
+          <div class="glass-card top5-card" style="grid-column: span 2; border-left: 4px solid var(--color-teal);">
+            <span class="rank">05</span>
+            <span class="badge badge-success mb-4">Hospitality &middot; Phase 1 ready now</span>
+            <h4 class="mb-4">Grand Bohemian Orlando, Autograph Collection</h4>
+            <p class="text-sm text-muted mb-2"><strong>Downtown Orlando</strong> &middot; luxury Marriott Autograph &middot; dedicated concierge service &middot; 11-min walk</p>
+            <p class="text-sm" style="color: #cbd5e1;">Highest-end downtown hotel. Concierge card pilot is low-cost, high-leverage. Hotel guest = often a high-AOV walk-in (forgot frames, urgent business need). <em>Approach:</em> In-person partnerships-lead intro to Concierge Manager, Q1 launch with branded bi-fold card distribution + quarterly thank-you gift.</p>
+            <span class="est-revenue">Est. $15-30K Y1, growing</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PARTNERSHIP MODELS -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Partnership Models &mdash; Lawful Structures</h2>
+        <div class="grid-2">
+          <div class="glass-card" style="border-left: 4px solid var(--color-teal);">
+            <h4 class="mb-4">Allowed structures</h4>
+            <div class="archetype-strip">
+              <div class="archetype-pill"><strong>Lunch-and-Learn</strong> Brand education at clinical practices &middot; no fee &middot; OD-led</div>
+              <div class="archetype-pill"><strong>Co-Branded Trunk Show</strong> Joint event &middot; revenue-neutral &middot; each contributes inventory + space</div>
+              <div class="archetype-pill"><strong>Reciprocal Education Materials</strong> Patient-facing materials &middot; no fee &middot; mutual</div>
+              <div class="archetype-pill"><strong>Gift-with-Styling-Appointment</strong> Eola gives partner product on Eola purchase &middot; no third-party fee</div>
+              <div class="archetype-pill"><strong>Cross-Promotional Content</strong> Mutual social mention, blog feature &middot; no fee</div>
+              <div class="archetype-pill"><strong>Sponsorship + Advertising</strong> Standard sponsorship contract with cultural / community partners</div>
+            </div>
+          </div>
+
+          <div class="glass-card" style="border-left: 4px solid var(--color-rose);">
+            <h4 class="mb-4">NOT used &mdash; legal risk</h4>
+            <div class="legal-not-allowed">
+              <p class="mb-2"><strong>Per-referral payment</strong> to any healthcare provider &mdash; violates Florida Patient Brokering Act § 817.505 + federal AKS / Stark.</p>
+              <p class="mb-2"><strong>Percentage-split arrangements</strong> on healthcare-referred patients &mdash; same statute.</p>
+              <p class="mb-2"><strong>Gift cards as referral incentive</strong> to clinical partners &mdash; treated as remuneration under the Patient Brokering Act.</p>
+              <p class="mb-0"><strong>Affiliate commissions on healthcare referrals</strong> &mdash; even with disclosure, prohibited.</p>
+            </div>
+            <p class="text-sm text-muted mt-4" style="font-style: italic;">Non-healthcare retail affiliate / commission arrangements are acceptable WITH disclosure.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTREACH PLAYBOOK -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Outreach Playbook</h2>
+        <div class="grid-2">
+
+          <div class="glass-card">
+            <h4 class="mb-4">Template &mdash; Healthcare Partner (post-legal-opinion)</h4>
+            <div class="template-block"><span class="subject">Subject: A 20-min lunch + an FDA-authorized myopia option for your pediatric patients</span>Dear Dr. [last name],
+
+I'm Dr. [first OD], one of the optometrists at Eola Eyes (519 N Mills, downtown Orlando). I'm writing because of a clinical update I think your front desk and clinical team would benefit from hearing about.
+
+In September 2025, the FDA authorized Essilor Stellest &mdash; the first eyeglass lens clinically shown to slow myopia progression in children, up to 71% over two years. We're now fitting kids 6-12 with Stellest.
+
+If you'd be open to a 20-minute working lunch, I'd love to bring lunch in for your team and walk you through the lens and the parent-conversation talking points. We can also share a co-signed reciprocal patient education form so you have a structured way to send patients to us when clinically warranted.
+
+Available [3 dates]. Replying or having your scheduler reach out works best.
+
+Warmly,
+Dr. [first OD] | Eola Eyes | (407) 447-7739</div>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Template &mdash; Lifestyle / Retail Partner</h4>
+            <div class="template-block"><span class="subject">Subject: Eola Eyes (Mills 50) + [partner business] &mdash; neighbor introduction</span>Hi [first name],
+
+I'm [name], partnerships lead at Eola Eyes. We're the boutique optical practice on 519 N Mills &mdash; three optometrists, frame curation including Blake Kuwahara, Matsuda, Theo, and l.a.Eyeworks, and a 23-year history in Mills 50.
+
+I've been a fan of [partner business] for [specific reason &mdash; be specific, not generic]. The reason I'm reaching out: our customers and yours are the same person &mdash; someone who values curated experience over volume retail.
+
+Open to a 20-minute coffee at Lineage to talk about ways we might cross-introduce? No agenda, just neighborhood-building. Could be as simple as a card swap; could be as rich as a co-branded styling/tasting night down the road.
+
+Best, [name]</div>
+          </div>
+
+        </div>
+
+        <div class="grid-3 mt-8">
+
+          <div class="glass-card">
+            <h4 class="mb-4">Lunch-and-Learn Structure</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 15 min: Frame story (artisan portfolio, Eola origin)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 15 min: Lens technology (Neurolens, Avulux, Stellest clinical evidence)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 15 min: Q&amp;A + reciprocal-form walkthrough</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Total: 45 minutes &middot; lunch provided &middot; OD-led</li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Gift Basket Spec</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Eola Eyes branded microfiber cloth (premium packaging)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Lineage Coffee 12oz bag (neighborhood reciprocity)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Handwritten note from an OD</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Frame-of-the-week postcard + 5 reciprocal-discount cards</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Total cost: <strong>$75-100</strong> per basket</li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">OD-Led Education Event</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 90-minute format &middot; 12-20 attendees</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Hosted at partner venue (medspa, dental practice, wine bar)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Topic: Migraine + light sensitivity, OR pediatric myopia, OR frame styling</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Each attendee gets follow-up consultation offer + branded swag</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- KPI FRAMEWORK -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Partnership KPI Framework</h2>
+        <div class="glass-card">
+          <p class="text-muted mb-4">Attribution discipline is the bottleneck. Without "How did you hear about us?" data captured at intake, no KPI in this section is measurable.</p>
+          <div class="kpi-grid">
+            <div class="kpi-tile">
+              <h5>Referrals per quarter</h5>
+              <p>Per-partner count via dropdown intake field. <strong>Tier 1 target: &ge;5/qtr.</strong></p>
+            </div>
+            <div class="kpi-tile">
+              <h5>Revenue per partner</h5>
+              <p>Attributed via promo code or asked at intake. <strong>Tier 1 target: $5-25K/yr.</strong></p>
+            </div>
+            <div class="kpi-tile">
+              <h5>Conversion rate</h5>
+              <p>Referral &rarr; exam &rarr; frame purchase. <strong>Target: &ge;60%</strong> (significantly higher than cold).</p>
+            </div>
+            <div class="kpi-tile">
+              <h5>ROI per partner</h5>
+              <p>(Referral revenue - partnership cost) / partnership cost. Reviewed quarterly with Top-5 partners.</p>
+            </div>
+            <div class="kpi-tile">
+              <h5>Avg ticket size (referred)</h5>
+              <p>EHR / POS tracking. <strong>Target: &ge;$700</strong> (boutique frame + premium lens).</p>
+            </div>
+            <div class="kpi-tile">
+              <h5>Reciprocal referrals out</h5>
+              <p>Eola &rarr; partner. <strong>Target: match or exceed inbound.</strong> Partner self-report.</p>
+            </div>
+            <div class="kpi-tile">
+              <h5>Quarterly review</h5>
+              <p>1-on-1 with each Top-5 partner. Re-tier annually based on performance.</p>
+            </div>
+            <div class="kpi-tile">
+              <h5>% new patients from partnerships</h5>
+              <p>Practice-level. <strong>Y1: &ge;10%. Y2 goal: 20-25%.</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ECONOMIC PROJECTION -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Year-1 / Year-3 Economic Projection</h2>
+        <div class="glass-card">
+          <p class="text-muted mb-4">Realistic ranges after Red Team downgrade. Both bands assume Phase 0 legal foundation is in hand.</p>
+          <div class="projection-row">
+            <div class="projection-card" style="border-left: 4px solid var(--color-amber);">
+              <span class="year-label">Year 1 &middot; post-legal-foundation, conservative</span>
+              <p class="lift-range">5&ndash;12% lift</p>
+              <p class="revenue">~$160K &ndash; $390K attributable revenue</p>
+              <p class="text-sm text-muted mt-4 mb-0">Realistic ramp. Healthcare partnerships still in education / lunch-and-learn phase. Lifestyle &amp; hospitality producing first measurable returns.</p>
+            </div>
+            <div class="projection-card" style="border-left: 4px solid var(--color-teal);">
+              <span class="year-label">Year 3 &middot; mature program, compliance baked in</span>
+              <p class="lift-range">15&ndash;30% lift</p>
+              <p class="revenue">~$485K &ndash; $970K attributable revenue</p>
+              <p class="text-sm text-muted mt-4 mb-0">Healthcare reciprocal-form pipeline producing Neurolens / Avulux / Stellest fits at steady cadence. Tier 1 partners reviewed quarterly. Top-5 mature.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPLICATIONS ENGINE -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Implications Engine</h2>
+        <div class="grid-3">
+
+          <div class="glass-card" style="border-left: 4px solid var(--color-rose);">
+            <h4 class="mb-4">Risk</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" style="stroke: #f87171;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Felony exposure from any clinical fee-split arrangement &mdash; ALL payers including self-pay</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: #f87171;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Half-built partnerships damage trust &mdash; one owner needed</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: #f87171;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Attribution dies without intake-form discipline</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: #f87171;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Concierge cards die in a drawer without 90-day check-ins</li>
+            </ul>
+          </div>
+
+          <div class="glass-card" style="border-left: 4px solid var(--color-amber);">
+            <h4 class="mb-4">Action</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><polyline points="20 6 9 17 4 12"/></svg> Engage Florida healthcare attorney NOW &mdash; $3-8K, 4-6 weeks</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><polyline points="20 6 9 17 4 12"/></svg> Designate single Partnerships Lead (OD or marketing person)</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><polyline points="20 6 9 17 4 12"/></svg> Update front-desk intake form with partner-name dropdown day one</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: var(--color-amber);"><polyline points="20 6 9 17 4 12"/></svg> Launch Phase 1 lifestyle / retail / hospitality outreach in parallel with Phase 0</li>
+            </ul>
+          </div>
+
+          <div class="glass-card" style="border-left: 4px solid var(--color-teal);">
+            <h4 class="mb-4">Decision</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" style="stroke: #2dd4bf;"><polyline points="20 6 9 17 4 12"/></svg> Q1 2026: Phase 0 legal opinion + Lorelei Wine Bar Q2 trunk show + Grand Bohemian concierge pilot</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: #2dd4bf;"><polyline points="20 6 9 17 4 12"/></svg> Q2-Q3 2026: Top-7 lifestyle Tier 1 launch (Winter Park Skin, Oasis Derm, Vamphair, Shaveshop, Tuni, Park Smiles lifestyle, Functional Wellness)</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: #2dd4bf;"><polyline points="20 6 9 17 4 12"/></svg> Q3-Q4 2026: Healthcare lunch-and-learn rollout (Neurovations, Migraine Center, Pediatrics) &mdash; ONLY after Phase 0 opinion delivered</li>
+              <li><svg viewBox="0 0 24 24" style="stroke: #2dd4bf;"><polyline points="20 6 9 17 4 12"/></svg> Without Partnerships Lead + intake discipline + legal opinion: <strong>do not launch</strong></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Eola Eyes Boutique Optical Sales Analysis | Research Date: May 2026</p>
+  </footer>
+</body>
+</html>

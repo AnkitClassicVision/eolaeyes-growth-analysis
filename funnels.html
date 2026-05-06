@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funnel Economics | Eola Eyes Boutique Optical Sales</title>
+  <meta name="description" content="Funnel economics, channel CAC, LTV modeling, and growth scenarios for Eola Eyes boutique optical practice in downtown Orlando.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    :root { --color-indigo: #6366f1; --color-rose: #f43f5e; --color-teal: #14b8a6; --color-amber: #f59e0b; --color-slate-950: #020617; }
+    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob--indigo"></div>
+    <div class="aurora-blob aurora-blob--rose"></div>
+    <div class="aurora-blob aurora-blob--teal"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        </svg>
+        Eola Eyes
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="executive-summary.html" class="nav-link">Executive Summary</a></li>
+        <li><a href="personas.html" class="nav-link">Personas</a></li>
+        <li><a href="competitive.html" class="nav-link">Competitive</a></li>
+        <li><a href="funnels.html" class="nav-link active">Funnels</a></li>
+        <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+        <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <header class="page-header" data-reveal>
+        <h1>Funnel Economics &amp; Growth Levers</h1>
+        <p>Where the $400-680K zero-CAC revenue lift lives — and the 18-36 month execution discipline it requires.</p>
+      </header>
+
+      <!-- Hypothesis Validation Top Card -->
+      <!-- Source: 03_research/05_Funnels_Economics/funnels_economics.md (priors); 05_review/research_review.md (final posteriors after Red Team) -->
+      <section class="section" data-reveal>
+        <div class="glass-card" style="border-left: 4px solid var(--color-indigo);">
+          <h3 class="mb-4">Hypothesis Validation — Funnel Economics</h3>
+          <p class="text-muted mb-8">Three hypotheses anchor this page. All three moved DOWN after Red Team review of capture-rate timelines and partnership-fit reality.</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Hypothesis</th>
+                  <th>Prior</th>
+                  <th>Posterior</th>
+                  <th>Direction</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="text-accent">H-M3</span></td>
+                  <td>Price sensitivity is LOW for Eola's target customer</td>
+                  <td>0.65</td>
+                  <td><strong>0.62</strong></td>
+                  <td class="text-warning">-0.03</td>
+                  <td><span class="badge badge-warning">Qualified — bimodal</span></td>
+                </tr>
+                <tr>
+                  <td><span class="text-accent">H-G1</span></td>
+                  <td>Highest-ROI marketing channel = Instagram + local creators</td>
+                  <td>0.68</td>
+                  <td><strong>0.50</strong></td>
+                  <td class="text-warning">-0.18</td>
+                  <td><span class="badge badge-warning">Reframed</span></td>
+                </tr>
+                <tr>
+                  <td><span class="text-accent">H-G2</span></td>
+                  <td>20-30% optical revenue lift from cross-referral partnerships</td>
+                  <td>0.55</td>
+                  <td><strong>0.40</strong></td>
+                  <td class="text-warning">-0.15</td>
+                  <td><span class="badge badge-warning">Downgraded</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm text-muted mt-8 mb-0"><strong>Read:</strong> H-M3 holds for the upper-AOV segment (Cal, Maya, Cartier-tier buyers) but bifurcates at the vision-plan boundary. H-G1 was split — GBP / local SEO wins absolute ROI, IG wins incremental brand. H-G2 was downgraded after the legal-foundation requirement (Florida § 817.505) raised the bar on partner curation.</p>
+        </div>
+      </section>
+
+      <!-- Phase 3 Review Caveat -->
+      <!-- Source: 05_review/research_review.md MJ-3 — Red Team contradiction of original 60-90 day projection -->
+      <section class="section" data-reveal>
+        <div class="glass-card" style="background: rgba(245, 158, 11, 0.08); border-left: 4px solid var(--color-amber);">
+          <div style="display: flex; align-items: flex-start; gap: 1rem;">
+            <div class="icon-container" style="background: rgba(245, 158, 11, 0.15); flex-shrink: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-amber)" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="mb-4" style="color: var(--color-amber);">Phase 3 Review Caveat — Timeline Correction (MJ-3)</h3>
+              <p>Industry case studies for capture-rate lift took <strong>36 months</strong>. The 90-day timeline projected in early drafts is <strong>wrong</strong>. PMS data extract is <strong>REQUIRED</strong> before committing to Eola-specific lift projections.</p>
+              <p class="mb-0 text-sm text-muted"><strong>What changed:</strong> The Funnels research originally projected 60-90 day rollouts for Scenario A. Red Team review of the comparable Review of Optometric Business case study showed it actually took 36 months. Every timeline on this page now reads 18-36 months for capture-rate work, 12-24 months for attach / recall, and explicitly waits for a 30-day PMS data extract before committing to Eola-specific dollar projections.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Headline Stats -->
+      <!-- Source: funnels_economics.md §3.3 ($3,640 5-yr LTV base), §3.4 ($6,370 10-yr base), §6 (combined internal lift), §3.5 (LTV:CAC range) -->
+      <section class="stats-grid" data-reveal>
+        <div class="glass-card stat-card">
+          <div class="stat-value">$3,640</div>
+          <div class="stat-label">5-Year LTV (Base)</div>
+          <p class="text-sm text-muted mt-4">Bottom-up boutique build; range $1,720-$6,975</p>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">$6,370</div>
+          <div class="stat-label">10-Year LTV (Base)</div>
+          <p class="text-sm text-muted mt-4">75% retention decay year 5-10 applied</p>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">$400-680K</div>
+          <div class="stat-label">Zero-CAC Annual Lift</div>
+          <p class="text-sm text-muted mt-4">Top 3 internal levers, 18-36 mo to full ramp</p>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">11–182:1</div>
+          <div class="stat-label">LTV:CAC Range</div>
+          <p class="text-sm text-muted mt-4">Google Ads at low end; organic GBP at top</p>
+        </div>
+      </section>
+
+      <!-- Industry Benchmarks -->
+      <!-- Source: funnels_economics.md §1.1, §1.2, §1.3, §1.4 -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Industry Benchmarks</h2>
+        <p class="text-muted mb-8">All numbers below are industry-wide benchmarks from primary sources (Sullivan MCG, Power Practice, Review of Optometric Business, The Vision Council, Anagram). They are NOT measured at Eola — Eola's actuals must come from a 30-day PMS extract.</p>
+
+        <div class="grid-2">
+          <div class="glass-card">
+            <h4 class="mb-4">Frame Capture Rate</h4>
+            <p class="text-sm text-muted mb-4">% of patients with an Rx written at the practice who buy frames at the same practice.</p>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Segment</th><th>Capture Rate</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Chains (LensCrafters, Warby, etc.)</td><td>45-55%</td></tr>
+                  <tr><td>Independent OD (typical)</td><td>60-70%</td></tr>
+                  <tr><td>Top-quartile boutique</td><td><span class="text-success">75-85%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-muted mt-4 mb-0"><strong>Single highest-leverage lever for Eola.</strong> Every 1pt of capture = ~$15K-16K/yr.</p>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Average Order Value (AOV)</h4>
+            <p class="text-sm text-muted mb-4">Frame + lenses, per pair purchased.</p>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Segment</th><th>AOV per pair</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>National average (US eyewear store)</td><td>$174</td></tr>
+                  <tr><td>Mid-market independent</td><td>$300-450</td></tr>
+                  <tr><td>Premium boutique</td><td><span class="text-success">$500-1,000</span></td></tr>
+                  <tr><td>Luxury (Cartier, Dita, Lindberg, Tom Ford)</td><td>$1,000-2,500+</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-muted mt-4 mb-0">Source: The Vision Council (national $174); Review of Optometric Business (boutique tiers).</p>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Sunglass / Multi-Pair Attach</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Segment</th><th>Sunglass Attach</th><th>Multi-Pair Attach</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Industry typical</td><td>18-22%</td><td>10-15%</td></tr>
+                  <tr><td>Best-in-class boutique</td><td><span class="text-success">35-45%</span></td><td><span class="text-success">25-30%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-muted mt-4 mb-0">Pure margin add — patient is already in the chair. Every 5pt of attach = ~$80K/yr at base assumptions.</p>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Frequency &amp; Repeat</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Metric</th><th>Range</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Frame purchase frequency (typical)</td><td>Every 1.5-2.5 yrs</td></tr>
+                  <tr><td>Frame purchase frequency (high-utilization / fashion-driven)</td><td>Every 12-18 mo</td></tr>
+                  <tr><td>Repeat purchase rate (optical retail)</td><td>70-80%</td></tr>
+                  <tr><td>Anti-reflective lens attach (industry avg / best-in-class)</td><td>40% / 70%+</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-muted mt-4 mb-0">Income-dependent: high-income / fashion-driven buyers turn frames materially faster.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAC by Channel -->
+      <!-- Source: funnels_economics.md §2 -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">CAC by Channel</h2>
+        <p class="text-muted mb-8">Capture-adjusted CAC for a new optical-paying patient (someone who completes an exam AND buys frames/lenses at Eola). Ranges reflect Orlando metro pricing where applicable.</p>
+
+        <div class="glass-card">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>Capture-Adjusted CAC</th>
+                  <th>Tier</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Local SEO / GBP organic</strong></td>
+                  <td><span class="text-success">$30-92</span></td>
+                  <td><span class="badge badge-success">Tier 1</span></td>
+                  <td>Cheapest acquisition. Reviews + photos + GBP posts. 80-300 clicks/mo achievable.</td>
+                </tr>
+                <tr>
+                  <td><strong>Patient referral / WOM</strong></td>
+                  <td><span class="text-success">$0-50</span></td>
+                  <td><span class="badge badge-success">Tier 1</span></td>
+                  <td>Lowest CAC if structured ask + light incentive. Highest-quality patients.</td>
+                </tr>
+                <tr>
+                  <td><strong>Vision insurance directory (VSP / EyeMed)</strong></td>
+                  <td><span class="text-success">~free (organic)</span></td>
+                  <td><span class="badge badge-info">Caution</span></td>
+                  <td>Volume present, but tends to compress AOV — anti-pattern for premium positioning.</td>
+                </tr>
+                <tr>
+                  <td><strong>Instagram organic</strong></td>
+                  <td>$50-150 (effective)</td>
+                  <td><span class="badge badge-success">Tier 1-2</span></td>
+                  <td>Brand cost amortized; conversion via DM + GBP click-through. Compounds 12-24 mo.</td>
+                </tr>
+                <tr>
+                  <td><strong>Local micro-influencer (5K-50K followers)</strong></td>
+                  <td>$80-280 (effective)</td>
+                  <td><span class="badge badge-info">Tier 2</span></td>
+                  <td>$150-500/post; ~3-10 patients/post. Best fit: Winter Park / Lake Nona / Baldwin Park lifestyle creators.</td>
+                </tr>
+                <tr>
+                  <td><strong>Facebook ads</strong></td>
+                  <td>$200-400</td>
+                  <td><span class="badge badge-info">Tier 2-3</span></td>
+                  <td>Best for 45+ demo and second-pair retargeting. Lower native fit than IG for fashion eyewear.</td>
+                </tr>
+                <tr>
+                  <td><strong>Instagram paid (Meta Ads)</strong></td>
+                  <td>$230-460</td>
+                  <td><span class="badge badge-info">Tier 2-3</span></td>
+                  <td>Local geo-targeted reels and shopping ads. Higher conversion when paired with organic content.</td>
+                </tr>
+                <tr>
+                  <td><strong>Google Ads paid search</strong></td>
+                  <td><span class="text-warning">$230-460</span></td>
+                  <td><span class="badge badge-warning">Tier 3</span></td>
+                  <td>Higher in Orlando metro due to chain bidding. Use for "boutique eyewear Orlando" intent only — not "eye exam Orlando" (commoditized).</td>
+                </tr>
+                <tr>
+                  <td><strong>Direct mail to high-income ZIPs</strong></td>
+                  <td><span class="text-warning">$400-800</span></td>
+                  <td><span class="badge badge-warning">Tier 3</span></td>
+                  <td>32789 Winter Park, 32814 Baldwin Park, 32827 Lake Nona, 34786 Windermere. ~0.5-2% conversion on cold mail.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="background: rgba(20, 184, 166, 0.08); border-left: 3px solid var(--color-teal); padding: 1.25rem; border-radius: 12px; margin-top: 1.5rem;">
+            <p class="mb-0"><strong>Insight:</strong> GBP / local SEO has 3-7x lower CAC than Instagram paid. Instagram should be the brand + content layer, not the direct-response layer. Win at GBP first; use IG for compounding brand equity; reserve Google Ads for high-intent boutique searches only.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LTV Modeling -->
+      <!-- Source: funnels_economics.md §3.1, §3.2, §3.3, §3.4, §3.5 -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">LTV Modeling</h2>
+        <p class="text-muted mb-8">Bottom-up build from explicit assumptions. Industry anchor: Review of Optometric Business reports above-average premium boutique patients at $800/yr × retention years. Eola's actuals must come from PMS data.</p>
+
+        <div class="grid-2">
+          <div class="glass-card">
+            <h4 class="mb-4">5-Year LTV Scenarios</h4>
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem;">
+              <h5 class="text-muted mb-4">Low Case</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Exams ($120 × 5)</span><span>$600</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Frames (2.0 × $500)</span><span>$1,000</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>2nd pair (0.4 × $300)</span><span>$120</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Clinical / Contacts / Referral</span><span>$0</span></div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 600;"><span>5-yr LTV (low)</span><span>~$1,720</span></div>
+            </div>
+            <div style="background: rgba(99,102,241,0.12); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; border: 1px solid rgba(99,102,241,0.3);">
+              <h5 class="text-muted mb-4">Base Case</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Exams ($180 × 5)</span><span>$900</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Frames (2.7 × $650)</span><span>$1,755</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>2nd pair (0.8 × $450)</span><span>$360</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Clinical (Neurolens / dry eye)</span><span>$250</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Contacts (30% mix)</span><span>$225</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Referral NPV</span><span>$150</span></div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 700; font-size: 1.125rem;"><span>5-yr LTV (base)</span><span class="text-accent">~$3,640</span></div>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px;">
+              <h5 class="text-muted mb-4">High Case</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Exams ($250 × 5)</span><span>$1,250</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Frames (3.5 × $850)</span><span>$2,975</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>2nd pair (1.5 × $700)</span><span>$1,050</span></div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Clinical / Contacts / Referral</span><span>$1,700</span></div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 600;"><span>5-yr LTV (high)</span><span>~$6,975</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="glass-card mb-8">
+              <h4 class="mb-4">10-Year LTV (Retention Decay Applied)</h4>
+              <p class="text-sm text-muted mb-4">75% retention from year 5 to year 10 (industry typical).</p>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr><th>Scenario</th><th>5-yr LTV</th><th>10-yr LTV</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Low</td><td>$1,720</td><td>$3,010</td></tr>
+                    <tr style="background: rgba(99,102,241,0.08);"><td><strong>Base</strong></td><td><strong>$3,640</strong></td><td><strong class="text-accent">$6,370</strong></td></tr>
+                    <tr><td>High</td><td>$6,975</td><td>$12,200</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-sm text-muted mt-4 mb-0">Missing one re-engagement cycle (no recall, no SMS at 22-mo mark) costs ~$1,800 per patient in the base case.</p>
+            </div>
+
+            <div class="glass-card">
+              <h4 class="mb-4">LTV:CAC by Channel (Base 5-yr LTV $3,640)</h4>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr><th>Channel</th><th>CAC (mid)</th><th>LTV:CAC</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Word-of-mouth</td><td>$20</td><td><span class="text-success">182:1</span></td></tr>
+                    <tr><td>IG organic</td><td>$25</td><td><span class="text-success">146:1</span></td></tr>
+                    <tr><td>GBP / local SEO</td><td>$60</td><td><span class="text-success">61:1</span></td></tr>
+                    <tr><td>Micro-influencer</td><td>$110</td><td><span class="text-success">33:1</span></td></tr>
+                    <tr><td>Referral partnerships</td><td>$115</td><td><span class="text-success">32:1</span></td></tr>
+                    <tr><td>IG paid</td><td>$175</td><td>21:1</td></tr>
+                    <tr><td>Direct mail</td><td>$250</td><td>15:1</td></tr>
+                    <tr><td>Google Ads</td><td>$345</td><td><span class="text-warning">11:1</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card mt-8">
+          <h4 class="mb-4">Explicit LTV Assumptions</h4>
+          <div class="grid-2">
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Frame purchases per 5 yrs: 2.0 / 2.7 / 3.5 (low / base / high)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                AOV per frame purchase (lenses included): $500 / $650 / $850
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Sunglass / 2nd pair frequency: 0.4 / 0.8 / 1.5 events per 5 yrs (18% attach base)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Sunglass / 2nd pair AOV: $300 / $450 / $700
+              </li>
+            </ul>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Annual exam revenue (insurance + copay): $120 / $180 / $250
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Contact lens revenue: $0 / $150/yr (30% of patients) / $400
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Clinical (Neurolens, dry eye, scleral) per 5yr: $0 / $250 / $700
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Family-member acquisition / referral NPV: $0 / $150 / $400
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- B2C 7-Stage Funnel -->
+      <!-- Source: funnels_economics.md §4 -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">B2C 7-Stage Boutique Optical Funnel</h2>
+        <p class="text-muted mb-8">Trigger → channel → content → KPI → drop-off → optimization lever for each stage. The highest economic leverage sits at Stage 3 → Stage 4 (Evaluation → Purchase) — the capture-rate moment.</p>
+
+        <div class="glass-card">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Stage</th>
+                  <th>Trigger</th>
+                  <th>Channel</th>
+                  <th>Content</th>
+                  <th>KPI</th>
+                  <th>Common Drop-Off</th>
+                  <th>Optimization Lever</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. Awareness</strong></td>
+                  <td>Frames dated, lifestyle moment, presbyopia at 40, vision benefits expiring</td>
+                  <td>IG feed + reels, TikTok adjacent, Pinterest, Orlando Magazine, WOM at brunch / yoga</td>
+                  <td>Aspirational lifestyle imagery, before/after styling reels, founder story (3 OD-owners)</td>
+                  <td>Reach + saved/share rate, brand-search volume, follower growth</td>
+                  <td>Generic "eye exam" positioning vs. boutique experience; chain ad volume drowns brand</td>
+                  <td>Local Orlando lifestyle micro-creators (Winter Park / Baldwin Park / Lake Nona); 1-2 monthly photo sessions</td>
+                </tr>
+                <tr>
+                  <td><strong>2. Consideration</strong></td>
+                  <td>"I should book"; partner / friend recommendation; Google search</td>
+                  <td>Google Search (organic + GBP map pack), IG bio link, Yelp, Healthgrades</td>
+                  <td>Reviews and ratings, doctor bios, brand list (Cartier? Lindberg? Tom Ford?), pricing philosophy</td>
+                  <td>GBP impressions + clicks, review velocity + rating trend, dwell time on Brands page</td>
+                  <td>Outdated website, missing brand pages, no clear pricing path, weak photography</td>
+                  <td>Build "Brands" page per designer line; curated Lookbook with real customer photos; 2 reviews / week</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Evaluation</strong></td>
+                  <td>Booked exam, walk-in browse, influencer-driven destination visit</td>
+                  <td>In-store experience, call handling, online booking, SMS reminders</td>
+                  <td>Doctor handoff (chair to optical), optician-as-stylist consult, mirror experience, virtual try-on</td>
+                  <td><strong class="text-accent">Capture rate</strong> (THE metric), time-in-optical, frames tried per visitor</td>
+                  <td>"I'll think about it"; sticker shock; opticians acting as fitters not stylists; cold doctor handoff</td>
+                  <td><strong>Doctor handoff script + tiered pricing menu</strong> ($350 / $650 / $1,200+); optician lifestyle questions</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Purchase</strong></td>
+                  <td>Frame chosen, lens consultation done, insurance / pricing confirmed</td>
+                  <td>POS in-store, CareCredit financing, vision benefits run, layaway</td>
+                  <td>Clear receipt, lens technology card, expected pickup date, second-pair offer</td>
+                  <td>AOV, second-pair / sunglass attach, AR / premium lens attach, Rx walks-out unfilled</td>
+                  <td>Sticker shock at lens upcharge; insurance friction; partner needs to approve</td>
+                  <td>Pre-purchase price transparency; <strong>2nd-pair offer in optical, not at checkout</strong>; CareCredit visible</td>
+                </tr>
+                <tr>
+                  <td><strong>5. Onboarding</strong></td>
+                  <td>Pickup appointment, first-wear adjustment, potential remake</td>
+                  <td>In-person fitting, SMS check-in 48hrs and 14 days post-pickup</td>
+                  <td>Care kit, 14-day adaptation guide for progressives, warranty + remake explanation</td>
+                  <td>Remake ratio (target &lt;15%), adaptation complaints, 30-day NPS</td>
+                  <td>Adaptation issues with progressives; AR coating expectations; scratch / fit issues</td>
+                  <td>48-hr text check-in: "How are the new glasses feeling?" — catches problems before Yelp reviews</td>
+                </tr>
+                <tr>
+                  <td><strong>6. Retention</strong></td>
+                  <td>12-mo recall, vision insurance reset (Jan 1), 22-mo replacement window, family ages in</td>
+                  <td>Email, SMS, postcard, phone call, loyalty program / membership</td>
+                  <td>Recall reminder, new arrivals, insurance benefit expiry, family-member offers, members program</td>
+                  <td>Recall response rate, 24-mo return rate, multi-pair frequency, family penetration</td>
+                  <td>No structured recall, recall feels generic, no membership / loyalty hook</td>
+                  <td>Membership program (members spend $800/yr vs $400 non-members per RoB benchmark)</td>
+                </tr>
+                <tr>
+                  <td><strong>7. Advocacy</strong></td>
+                  <td>Compliments from friends, family member needs exam, positive post-purchase moment</td>
+                  <td>Online reviews (Google, Yelp), IG / FB tags, structured referral asks</td>
+                  <td>Post-pickup ask script, referral incentive ($25 gift card / $50 store credit), founder thank-you at 30 days</td>
+                  <td>Review velocity (target 8+/mo), referral-attributed new patients, tagged social posts</td>
+                  <td>No structured ask; opticians forget to request reviews; no incentive</td>
+                  <td>At pickup: "If we exceeded expectations, would you mind a Google review? Here's the QR code."</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Eola Revenue Model + Growth Scenarios -->
+      <!-- Source: funnels_economics.md §5.1, §5.2, §5.3 -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Eola Revenue Model &amp; Growth Scenarios</h2>
+
+        <div class="glass-card" style="background: rgba(245, 158, 11, 0.08); border-left: 4px solid var(--color-amber); margin-bottom: 1.5rem;">
+          <p class="mb-0"><strong>Caveat (read first):</strong> All Eola-specific dollar figures below are <strong>modeled</strong> from industry benchmarks at an assumed 3,675 annual exams, 65% capture rate, $650 AOV, and 18% sunglass attach. They are <strong>NOT</strong> Eola's actual PMS data. Re-anchor with a 30-day PMS extract before committing to any of these projections externally.</p>
+        </div>
+
+        <div class="glass-card mb-8">
+          <h4 class="mb-4">Baseline Practice Sizing (Modeled)</h4>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Revenue Stream</th><th>Calculation</th><th>Annual ($)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Exam fees</td><td>3,675 × $180</td><td>$661,500</td></tr>
+                <tr><td>Frame + lens (primary)</td><td>3,675 × 65% × $650</td><td>$1,553,000</td></tr>
+                <tr><td>2nd pair / sunglasses</td><td>3,675 × 65% × 18% × $450</td><td>$193,500</td></tr>
+                <tr><td>Contact lenses</td><td>3,675 × 30% × $558</td><td>$615,200</td></tr>
+                <tr><td>Clinical (Neurolens, dry eye, scleral)</td><td>3,675 × 8% × $700</td><td>$205,800</td></tr>
+                <tr style="font-weight: 700; background: rgba(99,102,241,0.08);">
+                  <td colspan="2">Total baseline revenue (base case)</td>
+                  <td class="text-accent">~$3,229,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="glass-card">
+            <span class="badge badge-info mb-4">Scenario A: +12%</span>
+            <h4 class="mb-4">Top capture-rate lever only</h4>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--color-indigo); margin-bottom: 0.5rem;">~$3.62M</div>
+            <p class="text-sm text-muted mb-4"><strong>+~$390K</strong> over baseline</p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Capture rate 65% → 71% (+6 pts)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Doctor-to-optical handoff + tiered pricing menu</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Investment: $5K-10K (training, scripting, signage)</li>
+            </ul>
+            <p class="text-sm text-warning mt-4 mb-0"><strong>Time to realize: 18-36 months</strong> (per Red Team timeline correction)</p>
+          </div>
+
+          <div class="glass-card" style="border: 1px solid rgba(20, 184, 166, 0.4);">
+            <span class="badge badge-success mb-4">Scenario B: +20%</span>
+            <h4 class="mb-4">Top 3 internal levers</h4>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--color-teal); margin-bottom: 0.5rem;">~$3.88M</div>
+            <p class="text-sm text-muted mb-4"><strong>+~$650K</strong> over baseline</p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Capture rate 65% → 73% (+8 pts) [+$200K]</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Sunglass attach 18% → 28% (+10 pts) [+$160K]</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>AOV mix shift $650 → $720 [+$200K]</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Specialty / scleral CL uplift [+$80K]</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Investment: $25K-60K</li>
+            </ul>
+            <p class="text-sm text-warning mt-4 mb-0"><strong>Time to realize: 18-36 months</strong> (sequential lever stacking)</p>
+          </div>
+
+          <div class="glass-card">
+            <span class="badge badge-warning mb-4">Scenario C: +30%</span>
+            <h4 class="mb-4">Top 3 + partnership lift</h4>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--color-amber); margin-bottom: 0.5rem;">~$4.20M</div>
+            <p class="text-sm text-muted mb-4"><strong>+~$970K</strong> over baseline</p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>All Scenario B drivers</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>+8-12% new-patient growth from IG + micro-influencer + curated partnerships [+$370K]</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Loyalty / membership retention 60%+ at 24-mo recall [+$120K]</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Investment: $80K-150K</li>
+            </ul>
+            <p class="text-sm text-warning mt-4 mb-0"><strong>Requires legal foundation FIRST</strong> (Florida § 817.505 patient brokering compliance). Time: 24-36 months.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top 3 Internal Levers (THE HEADLINE) -->
+      <!-- Source: funnels_economics.md §6 -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Top 3 Internal Levers — The Headline</h2>
+        <p class="text-muted mb-8">The combined lift from these three internal levers is <strong>$400-680K annual revenue (+12% to +21%)</strong> with <strong>zero new acquisition cost</strong>. Customers are already in the chair; the practice already paid for the demand. This is where the work belongs first.</p>
+
+        <div class="grid-3">
+
+          <!-- Lever 1 -->
+          <div class="glass-card" style="border-left: 4px solid var(--color-indigo);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="badge badge-info">Lever 1</span>
+              <span class="text-sm text-muted">18-36 months</span>
+            </div>
+            <h4 class="mb-4">Doctor-to-Optical Handoff + Tiered Pricing Menu</h4>
+            <div style="background: rgba(99,102,241,0.1); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-indigo);">$200K-320K</div>
+              <div class="text-sm text-muted">Annual lift (capture rate 65% → 73-78%)</div>
+            </div>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Warm intro from exam chair to optician with named recommendation</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Good / Better / Best pricing menu: $350 / $650 / $1,200+</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Capture-rate target move: 65% → 73-78% (top-quartile boutique)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Investment: $5K-10K (staff training, scripting, signage)</li>
+            </ul>
+            <p class="text-sm text-muted mt-4 mb-0"><strong>Why this is #1:</strong> Customers walking out with their Rx are the most expensive lost revenue in the practice. Eola paid for the exam, owns the demand, and watches the buy go elsewhere. Industry consensus: warm doctor handoff alone moves capture 5-15 pts.</p>
+          </div>
+
+          <!-- Lever 2 -->
+          <div class="glass-card" style="border-left: 4px solid var(--color-teal);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="badge badge-success">Lever 2</span>
+              <span class="text-sm text-muted">18-24 months</span>
+            </div>
+            <h4 class="mb-4">Multi-Pair / Sunglass Attach Program</h4>
+            <div style="background: rgba(20,184,166,0.1); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-teal);">$80K-160K</div>
+              <div class="text-sm text-muted">Annual lift (attach 18% → 28%+)</div>
+            </div>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>In-optical signage at the fitting station</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Second-pair offer presented during fitting (NOT at checkout)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Optician trained on lifestyle questions (sun exposure / computer use / hobbies)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Attach-rate target: 18% → 28% (best-in-class boutique 35-45%)</li>
+            </ul>
+            <p class="text-sm text-muted mt-4 mb-0"><strong>Why this is #2:</strong> Pure margin add. Patient is already in the chair. Frame is paid for. Sunglass / blue-light / computer-pair conversation is a 5-minute lift. Review of Optometric Business case study reaches 40% sunglass attach.</p>
+          </div>
+
+          <!-- Lever 3 -->
+          <div class="glass-card" style="border-left: 4px solid var(--color-rose);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="badge badge-warning">Lever 3</span>
+              <span class="text-sm text-muted">12-18 mo to full ramp</span>
+            </div>
+            <h4 class="mb-4">24-Month Recall + Insurance-Benefit-Expiry Program</h4>
+            <div style="background: rgba(244,63,94,0.1); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-rose);">$120K-200K</div>
+              <div class="text-sm text-muted">Annual lift (recall response 25% → 45%)</div>
+            </div>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>SMS at 18 / 22 / 24 months</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Nov-Dec email push for unused vision benefits (use-it-or-lose-it)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Family-member offers</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Recall response target: 25% → 45%</li>
+            </ul>
+            <p class="text-sm text-muted mt-4 mb-0"><strong>Why this is #3:</strong> Existing-customer revenue at zero CAC. The 24-mo window is a known industry replacement cycle. Failing to trigger it means handing the recall to a competitor.</p>
+          </div>
+        </div>
+
+        <!-- Combined headline -->
+        <div class="glass-card mt-8" style="background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(20,184,166,0.12)); border: 1px solid rgba(99,102,241,0.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+            <div>
+              <h3 class="mb-4">Combined: $400-680K = +12% to +21% revenue</h3>
+              <p class="mb-0"><strong>Zero new acquisition cost.</strong> All three levers are internal — they reshape what happens to the patients Eola already gets through the door.</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-indigo);">$400-680K</div>
+              <div class="text-sm text-muted">Combined annual lift</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- External Acquisition Levers (de-prioritized) -->
+      <!-- Source: funnels_economics.md §6 (Optimizations #4-#5 + #7) -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">External Acquisition Levers</h2>
+        <p class="text-muted mb-8"><strong>De-prioritized.</strong> Fill the leaky bucket first. Marketing acquisition compounds the cost of every dropped capture-rate point. Run external levers in parallel only after internal economics have a measured baseline.</p>
+
+        <div class="grid-3">
+          <div class="glass-card">
+            <h4 class="mb-4">GBP Optimization + Reviews Cadence</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Commit to 5-8 Google reviews per month (structured ask at pickup)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Professional photos refreshed quarterly</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Weekly GBP posts (new arrivals, doctor spotlights)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Cheapest CAC channel after WOM ($30-92 capture-adjusted)</li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Premium Brand Merchandising + IG Lookbooks</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Carry Cartier / Lindberg / Dita / Tom Ford visibly in store</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>IG content built around real Orlando neighborhoods + customers</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Tests H-M3 (price sensitivity) + H-G1 (IG ROI) in-market</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>AOV mix-shift target: $650 → $720</li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Quarterly Trunk Shows</h4>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>One brand per quarter (Cartier, Lindberg, Dita, Tom Ford)</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Invite-only for top patients + warm prospects</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Press / lifestyle creator coverage as content amplifier</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Differentiates against Oxford Eyes' "private styling" program</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implementation Sequence Callout -->
+      <section class="section" data-reveal>
+        <div class="glass-card" style="background: rgba(99, 102, 241, 0.08); border-left: 4px solid var(--color-indigo);">
+          <div style="display: flex; align-items: flex-start; gap: 1rem;">
+            <div class="icon-container" style="background: rgba(99, 102, 241, 0.15); flex-shrink: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-indigo)" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="mb-4">Implementation Sequence</h3>
+              <p><strong>Internal levers FIRST (months 1-12). External acquisition SECOND (months 6-24).</strong></p>
+              <p>Do not invest in marketing acquisition until the capture-rate baseline is measured from PMS data. Otherwise every paid CAC dollar gets multiplied by the leaky-bucket discount. Order matters.</p>
+              <ul class="feature-list mt-4">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Months 1-3:</strong> 30-day PMS data extract; baseline capture / AOV / attach / recall</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Months 1-12:</strong> Lever 1 (handoff + tiered pricing) → Lever 2 (attach) → Lever 3 (recall)</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Months 6-24:</strong> Layer external acquisition (GBP cadence, IG lookbooks, trunk shows)</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Months 12-36:</strong> Re-measure capture rate; fund partnership lift only after legal foundation in place</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implications Engine -->
+      <!-- Source: funnels_economics.md §1 §2 §3 §4 §5 §6 Implications Engine sections -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Implications Engine</h2>
+        <p class="text-muted mb-8">Distilled implications from funnel economics — what the data forces Eola to do, and what it forces Eola to stop doing.</p>
+
+        <div class="grid-2">
+          <div class="glass-card">
+            <h4 class="mb-4" style="color: var(--color-teal);">What the data forces Eola TO DO</h4>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Pull a 30-day PMS extract before committing to any lift projection externally
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Sequence internal levers FIRST — capture, attach, recall — over 18-36 months
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Build a tiered Good / Better / Best pricing menu ($350 / $650 / $1,200+) and train opticians on it
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Move the second-pair offer from checkout into the fitting conversation
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Win at GBP / local SEO before paying for Google Ads or IG paid (3-7x cheaper CAC)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Carry visible premium designer inventory (Cartier / Lindberg / Dita / Tom Ford) — caps AOV near $500 without it
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Use the structured pickup-time ask for Google reviews — single highest-ROI advocacy mechanic
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4" style="color: var(--color-rose);">What the data forces Eola to STOP DOING</h4>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop projecting 60-90 day timelines for capture-rate work — Red Team contradicts; reality is 18-36 months
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop quoting Eola-specific lift numbers without PMS data — they are modeled, not measured
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop using Instagram paid as direct response — it is brand and content; GBP is direct response
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop bidding Google Ads for "eye exam Orlando" — commoditized, chains will outbid; use boutique-intent only
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop chasing partnership-driven acquisition until Florida § 817.505 legal opinion is in hand
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop participating in vision-plan directories that compress AOV — selective panel participation only
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Stop treating opticians as fitters — they need to be stylists with lifestyle Q training
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass-card mt-8" style="background: rgba(245, 158, 11, 0.06); border-left: 4px solid var(--color-amber);">
+          <p class="mb-0"><strong>Bottom line:</strong> The single highest-leverage economic move at Eola is <strong>capture rate × AOV</strong>, not patient volume. A boutique should operate at 75-85% capture and $650-1,000 AOV — and the path there is internal lever discipline over 18-36 months, anchored to PMS-measured baselines, not early-draft 90-day projections.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Eola Eyes Boutique Optical Sales Analysis | Funnel Economics | Source: 03_research/05_Funnels_Economics/funnels_economics.md, corrected per 05_review/research_review.md MJ-3</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Personas | Eola Eyes Boutique Optical Sales</title>
+  <meta name="description" content="Six grounded customer archetypes for Eola Eyes' boutique optical retail strategy in Orlando — anchored to Census, Vision Council, and Orlando neighborhood demographics.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    :root { --color-indigo: #6366f1; --color-rose: #f43f5e; --color-teal: #14b8a6; --color-slate-950: #020617; }
+    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob--indigo"></div>
+    <div class="aurora-blob aurora-blob--rose"></div>
+    <div class="aurora-blob aurora-blob--teal"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        </svg>
+        Eola Eyes
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="executive-summary.html" class="nav-link">Executive Summary</a></li>
+        <li><a href="personas.html" class="nav-link active">Personas</a></li>
+        <li><a href="competitive.html" class="nav-link">Competitive</a></li>
+        <li><a href="funnels.html" class="nav-link">Funnels</a></li>
+        <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+        <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <header class="page-header" data-reveal>
+        <h1>Customer Personas</h1>
+        <p>Six grounded archetypes for boutique optical sales at Eola Eyes &mdash; anchored to Census/Vision Council data and Orlando neighborhood demographics.</p>
+      </header>
+
+      <!-- Hypothesis Validation Summary -->
+      <section class="section" data-reveal>
+        <div class="glass-card" style="border-left: 3px solid var(--color-teal);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+            <div class="icon-container" style="background: rgba(20, 184, 166, 0.1); flex-shrink: 0;">
+              <svg viewBox="0 0 24 24" style="stroke: var(--color-teal);">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="mb-4">Hypothesis Validation Summary</h4>
+              <p style="margin-bottom: var(--space-3);">
+                <strong class="text-accent">H-M2</strong> (35-65 affluent core, $100k+ HHI) <strong class="text-success">strongly validated</strong> &mdash; Niche/Point2Homes data confirms Thornton Park, Baldwin Park, Winter Park, and Lake Nona households sit comfortably above $100k HHI.
+              </p>
+              <p style="margin-bottom: var(--space-3);">
+                <strong class="text-accent">H-M3</strong> (price sensitivity LOW; style + trust &gt; price) is <strong class="text-warning">bimodal</strong> &mdash; true for Cal, Jonathan, and Priya; qualified for Maya and Tess where insurance/benefits remain a meaningful subgroup.
+              </p>
+              <p style="margin-bottom: 0;">
+                <strong class="text-accent">H-G3</strong> (awareness gap vs. Warby Parker / chains) <strong class="text-success">holds</strong> for non-patient affluent professionals &mdash; the gap is specifically a top-of-funnel discovery deficit, not a blanket recognition problem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 1: Maya Alvarez (Priority) -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card" style="border-left: 3px solid var(--color-indigo);">
+          <div class="persona-header">
+            <picture>
+              <source srcset="./assets/images/personas/maya_alvarez_headshot.webp" type="image/webp">
+              <img src="./assets/images/personas/maya_alvarez_headshot.jpg" alt="Maya Alvarez" class="persona-img" width="160" height="160" loading="eager" decoding="async">
+            </picture>
+            <div class="persona-info">
+              <span class="badge badge-info" style="margin-bottom: var(--space-2);">Priority Persona for Growth</span>
+              <h3>Maya Alvarez</h3>
+              <p class="persona-subtitle">The Thornton Park Creative Director | Age 38</p>
+              <p class="text-sm text-muted mb-0">VP of Brand &amp; Creative at a regional ad agency &middot; Thornton Park (32801)</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "My glasses are on my face every single day in every Zoom, every pitch, every dinner. They have to <em>say something</em>. Warby was fine in my twenties &mdash; I want something now that nobody else in the room is wearing."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$200&ndash;260k</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Thornton Park</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Frame AOV</div>
+              <div class="metric-value">$700&ndash;1,100</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">5-Year LTV</div>
+              <div class="metric-value">~$5,150</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Top Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Warby's frames "all start to look the same"; she spots them on others and finds it deflating
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Chain progressives gave her a narrow reading channel &mdash; she squinted on her phone all day
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Limited design-forward options for the female face &mdash; tired of cat-eye-or-aviator binary
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Top Messaging Hooks</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Curated by three optometrists who actually wear what they sell."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Designer frames you won't see on every face in the office."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Premium progressive lenses (Varilux X) built for screen-heavy professionals."
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="badge badge-info">Strategic Role: Volume + cultural visibility</span>
+            <span class="text-sm text-muted" style="margin-left: var(--space-3);">Frame frequency: every 18&ndash;24 mo &middot; Discovery: Instagram-first</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Maya Caveat Callout -->
+      <section class="section" data-reveal>
+        <div class="glass-card" style="border-left: 3px solid var(--color-amber);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+            <div class="icon-container" style="background: rgba(245, 158, 11, 0.1); flex-shrink: 0;">
+              <svg viewBox="0 0 24 24" style="stroke: var(--color-amber);">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div>
+              <h5 class="mb-4 text-warning">Phase 3 Review Caveat</h5>
+              <p class="mb-0">
+                Creative-class is partially migrating suburban per Harvard data &mdash; <strong>validate this persona against Eola's actual customer ZIPs</strong> in the first 90 days before scaling Maya targeting. National creative-class urban migration patterns are not uniformly true of Orlando's local Thornton Park base, but the underlying Census/Niche income data for the immediate trade area is strong.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 2: Jonathan Whitfield -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <picture>
+              <source srcset="./assets/images/personas/jonathan_whitfield_headshot.webp" type="image/webp">
+              <img src="./assets/images/personas/jonathan_whitfield_headshot.jpg" alt="Jonathan Whitfield" class="persona-img" width="160" height="160" loading="lazy" decoding="async">
+            </picture>
+            <div class="persona-info">
+              <h3>Jonathan Whitfield</h3>
+              <p class="persona-subtitle">The Winter Park Established Professional | Age 56</p>
+              <p class="text-sm text-muted mb-0">Senior partner at a mid-size law firm / regional bank exec &middot; Winter Park (32789)</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I don't shop for glasses. I find an optician I trust, I tell them what I do for a living, and I let them help me look like myself &mdash; only sharper. I've worn the same brand for fifteen years."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$250&ndash;400k+</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Winter Park</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Frame AOV</div>
+              <div class="metric-value">$1,400&ndash;2,500</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">5-Year LTV</div>
+              <div class="metric-value">~$11,700</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Top Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  LensCrafters tried to put him in a "fashion forward" frame at 50 &mdash; felt insulting
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Bad progressives ruined a $900 pair &mdash; three return trips for adjustments
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Doesn't trust a junior salesperson to fit a $1,500 frame &mdash; wants the principal
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Top Messaging Hooks</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Lindberg, Cartier, and Maybach &mdash; fit and serviced by three optometrist-owners."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Discreet boutique experience. No high-pressure floor sales. By appointment if you prefer."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Three optometrist-owners. Twenty years on Mills Ave. The last optical you'll need to find."
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="badge badge-info">Strategic Role: High-value anchor</span>
+            <span class="text-sm text-muted" style="margin-left: var(--space-3);">Frame frequency: every 3&ndash;4 yr (multi-pair) &middot; Discovery: word-of-mouth</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 3: Tess Nguyen -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <picture>
+              <source srcset="./assets/images/personas/tess_nguyen_headshot.webp" type="image/webp">
+              <img src="./assets/images/personas/tess_nguyen_headshot.jpg" alt="Tess Nguyen" class="persona-img" width="160" height="160" loading="lazy" decoding="async">
+            </picture>
+            <div class="persona-info">
+              <h3>Tess Nguyen</h3>
+              <p class="persona-subtitle">The Mills 50 Cultural Curator | Age 32</p>
+              <p class="text-sm text-muted mb-0">Beverage director / chef-partner / gallery manager &middot; Mills 50 (32803)</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I'd rather wear a frame from a designer who made 200 of them than a brand on every billboard. Story matters. The hands that made it matter."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$130&ndash;200k</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Mills 50</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Frame AOV</div>
+              <div class="metric-value">$600&ndash;1,000</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">5-Year LTV</div>
+              <div class="metric-value">~$3,450</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Top Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Mass brands feel "design-school knockoff" &mdash; recognizable and uninteresting
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Some boutique opticals feel snobbish or assume she can't afford them
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Insurance is often nonexistent (1099 / restaurant industry) &mdash; she pays out of pocket
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Top Messaging Hooks</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Independent designers, handmade in Japan and Europe &mdash; frames you won't find at the mall."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "A Blake Kuwahara frame is a sculpture you wear on your face."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Around the corner from East End Market and Mills 50 &mdash; your neighborhood designer eyewear boutique."
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="badge badge-info">Strategic Role: Referral multiplier</span>
+            <span class="text-sm text-muted" style="margin-left: var(--space-3);">Frame frequency: every 18&ndash;30 mo &middot; Discovery: Instagram + word-of-mouth</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 4: Dr. Priya Shah -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <picture>
+              <source srcset="./assets/images/personas/priya_shah_headshot.webp" type="image/webp">
+              <img src="./assets/images/personas/priya_shah_headshot.jpg" alt="Dr. Priya Shah" class="persona-img" width="160" height="160" loading="lazy" decoding="async">
+            </picture>
+            <div class="persona-info">
+              <h3>Dr. Priya Shah</h3>
+              <p class="persona-subtitle">The Lake Nona Medical Executive | Age 47</p>
+              <p class="text-sm text-muted mb-0">Hospital service-line VP / physician / biotech executive &middot; Lake Nona (32827)</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "My time is the scarcest thing I own. If a place wastes it, I'm not coming back. Pre-pick frames I'll like, schedule me a single 45-minute window, get my Rx right the first time. That's premium to me."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$300&ndash;500k+</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Lake Nona</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Frame AOV</div>
+              <div class="metric-value">$1,200&ndash;2,200</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">5-Year LTV</div>
+              <div class="metric-value">~$12,900</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Top Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Has been to opticians who couldn't keep up with a -8.00 high-index conversation
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Generic digital eye strain advice ("blink more!") from chain ODs is insulting
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Has migraines worsened by long screen days &mdash; wants a real clinical solution
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Top Messaging Hooks</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Concierge optical experience for Lake Nona professionals. Single appointment, comprehensive."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Neurolens &mdash; clinically proven prism technology for digital eye strain and chronic headache."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Stellest myopia control for your kids &mdash; the lens technology your peers prescribe."
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="badge badge-info">Strategic Role: Family annuity, clinical credibility</span>
+            <span class="text-sm text-muted" style="margin-left: var(--space-3);">Frame frequency: every 2 yr + family &middot; Discovery: peer referral + search</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 5: Caroline "Cal" Beaumont -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card" style="border-left: 3px solid var(--color-emerald-light, #34d399);">
+          <div class="persona-header">
+            <picture>
+              <source srcset="./assets/images/personas/cal_beaumont_headshot.webp" type="image/webp">
+              <img src="./assets/images/personas/cal_beaumont_headshot.jpg" alt="Caroline 'Cal' Beaumont" class="persona-img" width="160" height="160" loading="lazy" decoding="async">
+            </picture>
+            <div class="persona-info">
+              <span class="badge badge-success" style="margin-bottom: var(--space-2);">Highest 5-Year LTV</span>
+              <h3>Caroline "Cal" Beaumont</h3>
+              <p class="persona-subtitle">The Multi-Frame Eyewear Enthusiast | Age 44 (range 35-65)</p>
+              <p class="text-sm text-muted mb-0">Senior creative leader / real estate developer / personal-brand founder &middot; Baldwin Park, Winter Park, College Park, Delaney Park</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I have a black Lindberg for meetings, a Tom Ford for going out, a Maybach when I'm traveling, and a vintage round acetate for weekends. Eyewear is wardrobe. Every outfit asks a different question."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$200&ndash;500k+</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Baldwin / Winter Park</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Frame AOV</div>
+              <div class="metric-value">$800&ndash;3,000</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">5-Year LTV</div>
+              <div class="metric-value">~$24,200</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Top Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Most chains carry the same 3 brands and rotate inventory predictably
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Some opticals don't take her seriously when she asks to look at three to four pairs
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Wants staff to remember her on subsequent visits &mdash; new frames waiting
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Top Messaging Hooks</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Build your eyewear wardrobe. Cartier, Lindberg, Maybach, Tom Ford, Blake Kuwahara &mdash; all under one roof."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Personal optical concierge. Text us when something arrives we know you'll love."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Re-lens any frame you already love. Save the piece. Update the prescription."
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="badge badge-success">Strategic Role: Highest LTV / growth flywheel</span>
+            <span class="text-sm text-muted" style="margin-left: var(--space-3);">Frame frequency: 2&ndash;4 frames/yr &middot; Discovery: Instagram + CRM</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 6: Michael Reyes -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <picture>
+              <source srcset="./assets/images/personas/michael_reyes_headshot.webp" type="image/webp">
+              <img src="./assets/images/personas/michael_reyes_headshot.jpg" alt="Michael Reyes" class="persona-img" width="160" height="160" loading="lazy" decoding="async">
+            </picture>
+            <div class="persona-info">
+              <h3>Michael Reyes</h3>
+              <p class="persona-subtitle">The Migraine-Driven Patient &rarr; Optical Convert | Age 41</p>
+              <p class="text-sm text-muted mb-0">Software engineering manager / financial analyst / graphic designer &middot; Delaney Park, College Park, Mills 50, Lake Nona</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I went there because the chain place couldn't help my headaches. I left with a Neurolens prescription, a $900 frame I actually loved, and a sense that I'd finally been <em>listened to</em>. Now my whole family goes."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$180&ndash;300k</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Delaney / College Park</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Frame AOV</div>
+              <div class="metric-value">$1,400&ndash;2,200</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">5-Year LTV</div>
+              <div class="metric-value">~$10,600</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Top Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Bounced between primary care, neurology, and ophthalmology with no resolution
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Chain ODs gave a 5-minute exam and didn't probe the symptom history
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  The "right answer" felt buried under product upsell at every chain
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Top Messaging Hooks</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Chronic headaches? Digital eye strain? You may have eye misalignment. Neurolens prism therapy."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Avulux migraine glasses &mdash; 90% wearer relief. The only clinically proven precision optical filter for migraine."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "We diagnose, then we treat &mdash; not the other way around."
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="badge badge-info">Strategic Role: Clinical wedge &rarr; family acquisition</span>
+            <span class="text-sm text-muted" style="margin-left: var(--space-3);">Frame frequency: every 18&ndash;24 mo &middot; Discovery: search (clinical-intent)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cross-Persona Comparison Table -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Cross-Persona Comparison</h2>
+        <div class="glass-card">
+          <p class="text-sm text-muted mb-4">Comparative read across all six personas &mdash; use this view to size segments, allocate channel budget, and identify the LTV-to-acquisition-cost ceiling for each archetype.</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Persona</th>
+                  <th>Age</th>
+                  <th>HHI</th>
+                  <th>Primary Channel</th>
+                  <th>AOV</th>
+                  <th>Frame Frequency</th>
+                  <th>Style Preference</th>
+                  <th>5-yr LTV</th>
+                  <th>Strategic Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Maya</strong> &mdash; Thornton Park Creative</td>
+                  <td>35&ndash;45</td>
+                  <td>$200&ndash;260k</td>
+                  <td>Instagram</td>
+                  <td>$700&ndash;1,100</td>
+                  <td>Every 18&ndash;24 mo</td>
+                  <td>Distinctive design-forward</td>
+                  <td>~$5,150</td>
+                  <td>Volume + cultural visibility</td>
+                </tr>
+                <tr>
+                  <td><strong>Jonathan</strong> &mdash; Winter Park Pro</td>
+                  <td>50&ndash;60</td>
+                  <td>$250&ndash;400k+</td>
+                  <td>Word-of-mouth</td>
+                  <td>$1,400&ndash;2,500</td>
+                  <td>Every 3&ndash;4 yr (multi)</td>
+                  <td>Conservative-luxury</td>
+                  <td>~$11,700</td>
+                  <td>High-value anchor</td>
+                </tr>
+                <tr>
+                  <td><strong>Tess</strong> &mdash; Mills 50 Curator</td>
+                  <td>28&ndash;38</td>
+                  <td>$130&ndash;200k</td>
+                  <td>Instagram + WOM</td>
+                  <td>$600&ndash;1,000</td>
+                  <td>Every 18&ndash;30 mo</td>
+                  <td>Indie/artisan</td>
+                  <td>~$3,450</td>
+                  <td>Referral multiplier</td>
+                </tr>
+                <tr>
+                  <td><strong>Dr. Priya</strong> &mdash; Lake Nona Med</td>
+                  <td>40&ndash;55</td>
+                  <td>$300&ndash;500k+</td>
+                  <td>Peer referral + search</td>
+                  <td>$1,200&ndash;2,200</td>
+                  <td>Every 2 yr + family</td>
+                  <td>Refined modern</td>
+                  <td>~$12,900</td>
+                  <td>Family annuity, clinical credibility</td>
+                </tr>
+                <tr>
+                  <td><strong>Cal</strong> &mdash; Frame Wardrobe</td>
+                  <td>35&ndash;65</td>
+                  <td>$200&ndash;500k+</td>
+                  <td>Instagram + CRM</td>
+                  <td>$800&ndash;3,000</td>
+                  <td>2&ndash;4 frames/yr</td>
+                  <td>Encyclopedic</td>
+                  <td><span class="text-success"><strong>~$24,200</strong></span></td>
+                  <td>Highest LTV / growth flywheel</td>
+                </tr>
+                <tr>
+                  <td><strong>Michael</strong> &mdash; Migraine Convert</td>
+                  <td>Any</td>
+                  <td>$180&ndash;300k</td>
+                  <td>Search (clinical)</td>
+                  <td>$1,400&ndash;2,200</td>
+                  <td>Every 18&ndash;24 mo</td>
+                  <td>Style-aware over time</td>
+                  <td>~$10,600</td>
+                  <td>Clinical wedge &rarr; family acquisition</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implications Engine -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Implications</h2>
+        <div class="grid-2">
+
+          <div class="glass-card swot-card swot-card--strengths">
+            <h4 class="mb-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="stroke: var(--color-emerald);">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+              SO WHAT
+            </h4>
+            <p class="mb-4 text-sm"><strong>Maya is the largest segment by count; Cal is the highest LTV by ~5x.</strong></p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Maya + Tess combined = largest addressable population in immediate trade area
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Cal + Jonathan disproportionately drive revenue &mdash; Cal alone is ~5x Maya's 5-yr LTV
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Revenue is not normally distributed &mdash; both flywheels matter (volume + value)
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card swot-card swot-card--opportunities">
+            <h4 class="mb-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="stroke: var(--color-indigo);">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+              NOW WHAT
+            </h4>
+            <p class="mb-4 text-sm"><strong>Three concurrent channel investments, ranked by ROI confidence.</strong></p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                <strong>Priority IG creative for Maya</strong> &mdash; current Warby user, IG-discoverable, content-producing
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                <strong>CRM + SMS email for Cal</strong> &mdash; "frame-of-the-month" drops, trunk shows, designer events
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                <strong>Clinical-referral pipeline for Priya &amp; Michael</strong> &mdash; Neurolens, Avulux, peer-physician network
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card swot-card swot-card--threats">
+            <h4 class="mb-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="stroke: var(--color-amber);">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+              WHAT IF
+            </h4>
+            <p class="mb-4 text-sm"><strong>Suburban migration may shift the gravitational center over the next 24&ndash;36 months.</strong></p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                If Warby opens in Mall at Millenia &mdash; tighten Maya's IG/local-creator content; convert faster to Cal trajectory
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                If Lake Nona doubles &mdash; Priya scales; consider satellite or pop-up presence
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                If consumer trade-down accelerates &mdash; Maya/Tess delay; Jonathan/Cal recession-resistant
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card swot-card swot-card--weaknesses">
+            <h4 class="mb-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="stroke: var(--color-rose);">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              COMPARED TO
+            </h4>
+            <p class="mb-4 text-sm"><strong>Eola does not compete with Warby Parker on price, age, or online convenience.</strong></p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Warby buyer: 18&ndash;35, mid-HHI (declining), $95&ndash;195 frames, standard lenses, house brand only
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Eola buyer: 35&ndash;65, $150k+ HHI, $300&ndash;2,500 frames, Varilux X / Neurolens / Avulux, 6+ designer brands
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Eola competes on the <strong>upgrade transition</strong> &mdash; the obvious next step after the Warby Parker years
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Eola Eyes Boutique Optical Sales Analysis | Research Date: May 2026 | <a href="../03_research/03_Personas/personas.md">Source: personas.md</a></p>
+  </footer>
+</body>
+</html>
